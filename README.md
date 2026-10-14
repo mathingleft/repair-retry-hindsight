@@ -4,7 +4,7 @@ Code, frozen experiment records, and analyses for
 
 > Jack Li\* and Sophia Li\*. **Repair, Retry, and the Cost of Hindsight: Verifier
 > Feedback in Formal Theorem Proving.** NeurIPS 2026 Workshop on AI for Verifiable
-> Coding. (\*Equal contribution; order determined by coin flip.)
+> Coding (VeriCodeGen). (\*Equal contribution; order determined by coin flip.)
 
 Every number, table, and figure in the paper is recomputed from the records in
 this repository by `scripts/reproduce.py` (main analyses) and
