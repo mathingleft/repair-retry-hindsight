@@ -1,0 +1,162 @@
+{
+ "qwen": {
+  "CE-I": {
+   "label": "CE - I",
+   "mean_pp": -18.29784057542378,
+   "exact_p": 0.1875,
+   "nonzero_problems": 9
+  },
+  "C-I": {
+   "label": "C - I",
+   "mean_pp": -40.1160223936056,
+   "exact_p": 0.015625,
+   "nonzero_problems": 11
+  },
+  "CE-C": {
+   "label": "CE - C",
+   "mean_pp": 21.818181818181817,
+   "exact_p": 0.01171875,
+   "nonzero_problems": 11
+  },
+  "CE-CE_s": {
+   "label": "CE - CE_s",
+   "mean_pp": 18.181818181818183,
+   "exact_p": 0.01171875,
+   "nonzero_problems": 10
+  },
+  "CE-CE_m": {
+   "label": "CE - CE_m",
+   "mean_pp": 23.636363636363637,
+   "exact_p": 0.00390625,
+   "nonzero_problems": 9
+  },
+  "f-E_s": {
+   "label": "E - E_m",
+   "mean_pp": 6.3636363636363615,
+   "exact_p": 0.453125,
+   "nonzero_problems": 7
+  },
+  "interaction": {
+   "label": "(CE-CE_s)-(E-E_m)",
+   "mean_pp": 11.818181818181817,
+   "exact_p": 0.2890625,
+   "nonzero_problems": 10
+  },
+  "matched_interaction": {
+   "label": "(CE-CE_m)-(E-E_m)",
+   "mean_pp": 17.272727272727273,
+   "exact_p": 0.12890625,
+   "nonzero_problems": 10
+  },
+  "f-I": {
+   "label": "E - I",
+   "mean_pp": 0.7930685154853089,
+   "exact_p": 0.908203125,
+   "nonzero_problems": 10
+  },
+  "E_s-I": {
+   "label": "E_m - I",
+   "mean_pp": -5.570567848151054,
+   "exact_p": 0.6328125,
+   "nonzero_problems": 10
+  },
+  "CE_m-I": {
+   "label": "CE_m - I",
+   "mean_pp": -41.93420421178742,
+   "exact_p": 0.0078125,
+   "nonzero_problems": 10
+  },
+  "CE_s-E_s": {
+   "label": "CE_s - E_m",
+   "mean_pp": -30.909090909090907,
+   "exact_p": 0.015625,
+   "nonzero_problems": 8
+  },
+  "CE_m-E_s": {
+   "label": "CE_m - E_m",
+   "mean_pp": -36.36363636363637,
+   "exact_p": 0.00390625,
+   "nonzero_problems": 9
+  }
+ },
+ "deepseek": {
+  "CE-I": {
+   "label": "CE - I",
+   "mean_pp": -50.7358059922749,
+   "exact_p": 0.001953125,
+   "nonzero_problems": 10
+  },
+  "C-I": {
+   "label": "C - I",
+   "mean_pp": -50.735805992274884,
+   "exact_p": 0.001953125,
+   "nonzero_problems": 10
+  },
+  "CE-C": {
+   "label": "CE - C",
+   "mean_pp": 7.569702440626067e-16,
+   "exact_p": 1.0,
+   "nonzero_problems": 4
+  },
+  "CE-CE_s": {
+   "label": "CE - CE_s",
+   "mean_pp": 1.8181818181818201,
+   "exact_p": 0.8828125,
+   "nonzero_problems": 8
+  },
+  "CE-CE_m": {
+   "label": "CE - CE_m",
+   "mean_pp": 1.8181818181818183,
+   "exact_p": 0.828125,
+   "nonzero_problems": 7
+  },
+  "f-E_s": {
+   "label": "E - E_m",
+   "mean_pp": -14.545454545454547,
+   "exact_p": 0.0625,
+   "nonzero_problems": 6
+  },
+  "interaction": {
+   "label": "(CE-CE_s)-(E-E_m)",
+   "mean_pp": 16.363636363636367,
+   "exact_p": 0.15234375,
+   "nonzero_problems": 10
+  },
+  "matched_interaction": {
+   "label": "(CE-CE_m)-(E-E_m)",
+   "mean_pp": 16.363636363636367,
+   "exact_p": 0.109375,
+   "nonzero_problems": 9
+  },
+  "f-I": {
+   "label": "E - I",
+   "mean_pp": -8.008533265002159,
+   "exact_p": 0.40625,
+   "nonzero_problems": 9
+  },
+  "E_s-I": {
+   "label": "E_m - I",
+   "mean_pp": 6.536921280452389,
+   "exact_p": 0.31640625,
+   "nonzero_problems": 9
+  },
+  "CE_m-I": {
+   "label": "CE_m - I",
+   "mean_pp": -52.55398781045672,
+   "exact_p": 0.001953125,
+   "nonzero_problems": 10
+  },
+  "CE_s-E_s": {
+   "label": "CE_s - E_m",
+   "mean_pp": -59.09090909090909,
+   "exact_p": 0.001953125,
+   "nonzero_problems": 10
+  },
+  "CE_m-E_s": {
+   "label": "CE_m - E_m",
+   "mean_pp": -59.09090909090909,
+   "exact_p": 0.001953125,
+   "nonzero_problems": 10
+  }
+ }
+}

@@ -1,0 +1,1269 @@
+{
+ "summary": {
+  "bank": "bank2.jsonl",
+  "model_tokenizer": "/scratch/anonymous/models/DeepSeek-Prover-V2-7B",
+  "n": 137,
+  "classes": {
+   "crash": 2,
+   "linarith": 31,
+   "no_goals": 11,
+   "omega": 13,
+   "other": 9,
+   "resource": 5,
+   "rewrite": 3,
+   "simp": 8,
+   "syntax": 29,
+   "type": 3,
+   "unknown": 16,
+   "unsolved": 7
+  },
+  "pooled_singleton_classes": [],
+  "reuse": {
+   "max": 1,
+   "min": 1,
+   "distinct_sources": 137
+  },
+  "tok_ratio_median": 1.0454545454545454,
+  "tok_ratio_p90": 2.2285714285714286,
+  "tok_ratio_max": 10.206896551724139,
+  "same_class_frac": 1.0,
+  "self_pairs": 0,
+  "identical_text_pairs": 37,
+  "seed_note": "deterministic: Hungarian min-cost perfect matching within class, cost=|log tok ratio|"
+ },
+ "map": {
+  "amc12b_2002_p4": {
+   "src": "induction_pprime_pdvdapowpma",
+   "class": "crash",
+   "own_class": "crash",
+   "src_class": "crash",
+   "own_tok": 34,
+   "src_tok": 34,
+   "cost": 50.0
+  },
+  "induction_pprime_pdvdapowpma": {
+   "src": "amc12b_2002_p4",
+   "class": "crash",
+   "own_class": "crash",
+   "src_class": "crash",
+   "own_tok": 34,
+   "src_tok": 34,
+   "cost": 50.0
+  },
+  "aime_1988_p8": {
+   "src": "aime_1997_p9",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 132,
+   "src_tok": 131,
+   "cost": 0.0076
+  },
+  "aime_1990_p15": {
+   "src": "mathd_algebra_362",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 113,
+   "src_tok": 113,
+   "cost": 0.0
+  },
+  "aime_1995_p7": {
+   "src": "algebra_apbon2pownleqapownpbpowon2",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 121,
+   "src_tok": 123,
+   "cost": 0.0164
+  },
+  "aime_1997_p9": {
+   "src": "aime_1988_p8",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 131,
+   "src_tok": 132,
+   "cost": 0.0076
+  },
+  "algebra_apbmpcneq0_aeq0anbeq0anceq0": {
+   "src": "mathd_algebra_17",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 391,
+   "src_tok": 412,
+   "cost": 0.0523
+  },
+  "algebra_apbon2pownleqapownpbpowon2": {
+   "src": "aime_1995_p7",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 123,
+   "src_tok": 121,
+   "cost": 0.0164
+  },
+  "amc12_2000_p1": {
+   "src": "imo_1992_p1",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 712,
+   "src_tok": 568,
+   "cost": 0.226
+  },
+  "amc12_2000_p20": {
+   "src": "imo_1984_p6",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 128,
+   "src_tok": 127,
+   "cost": 0.0078
+  },
+  "amc12a_2008_p25": {
+   "src": "mathd_algebra_320",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 135,
+   "src_tok": 135,
+   "cost": 0.0
+  },
+  "amc12a_2009_p7": {
+   "src": "imo_1965_p2",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 288,
+   "src_tok": 285,
+   "cost": 0.0105
+  },
+  "amc12a_2021_p12": {
+   "src": "mathd_algebra_354",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 129,
+   "src_tok": 128,
+   "cost": 0.0078
+  },
+  "amc12b_2002_p19": {
+   "src": "amc12b_2021_p3",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 385,
+   "src_tok": 384,
+   "cost": 0.0026
+  },
+  "amc12b_2021_p3": {
+   "src": "amc12b_2002_p19",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 384,
+   "src_tok": 385,
+   "cost": 0.0026
+  },
+  "imo_1960_p2": {
+   "src": "mathd_algebra_170",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 537,
+   "src_tok": 554,
+   "cost": 0.0312
+  },
+  "imo_1962_p2": {
+   "src": "amc12a_2008_p25",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 138,
+   "src_tok": 135,
+   "cost": 0.022
+  },
+  "imo_1965_p2": {
+   "src": "amc12a_2009_p7",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 285,
+   "src_tok": 288,
+   "cost": 0.0105
+  },
+  "imo_1984_p6": {
+   "src": "amc12a_2021_p12",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 127,
+   "src_tok": 129,
+   "cost": 0.0156
+  },
+  "imo_1985_p6": {
+   "src": "induction_nfactltnexpnm1ngt3",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 236,
+   "src_tok": 281,
+   "cost": 0.1745
+  },
+  "imo_1992_p1": {
+   "src": "amc12_2000_p1",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 568,
+   "src_tok": 712,
+   "cost": 0.226
+  },
+  "induction_nfactltnexpnm1ngt3": {
+   "src": "imo_1985_p6",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 281,
+   "src_tok": 236,
+   "cost": 0.1745
+  },
+  "mathd_algebra_142": {
+   "src": "aime_1990_p15",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 115,
+   "src_tok": 113,
+   "cost": 0.0175
+  },
+  "mathd_algebra_160": {
+   "src": "mathd_numbertheory_765",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 80,
+   "src_tok": 91,
+   "cost": 0.1288
+  },
+  "mathd_algebra_17": {
+   "src": "algebra_apbmpcneq0_aeq0anbeq0anceq0",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 412,
+   "src_tok": 391,
+   "cost": 0.0523
+  },
+  "mathd_algebra_170": {
+   "src": "imo_1960_p2",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 554,
+   "src_tok": 537,
+   "cost": 0.0312
+  },
+  "mathd_algebra_320": {
+   "src": "imo_1962_p2",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 135,
+   "src_tok": 138,
+   "cost": 0.022
+  },
+  "mathd_algebra_354": {
+   "src": "mathd_algebra_452",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 128,
+   "src_tok": 128,
+   "cost": 0.0
+  },
+  "mathd_algebra_362": {
+   "src": "mathd_algebra_142",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 113,
+   "src_tok": 115,
+   "cost": 0.0175
+  },
+  "mathd_algebra_427": {
+   "src": "mathd_algebra_487",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 123,
+   "src_tok": 124,
+   "cost": 0.0081
+  },
+  "mathd_algebra_452": {
+   "src": "amc12_2000_p20",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 128,
+   "src_tok": 128,
+   "cost": 0.0
+  },
+  "mathd_algebra_487": {
+   "src": "mathd_algebra_427",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 124,
+   "src_tok": 123,
+   "cost": 0.0081
+  },
+  "mathd_numbertheory_765": {
+   "src": "mathd_algebra_160",
+   "class": "linarith",
+   "own_class": "linarith",
+   "src_class": "linarith",
+   "own_tok": 91,
+   "src_tok": 80,
+   "cost": 0.1288
+  },
+  "aime_1983_p1": {
+   "src": "amc12b_2002_p7",
+   "class": "no_goals",
+   "own_class": "no_goals",
+   "src_class": "no_goals",
+   "own_tok": 128,
+   "src_tok": 29,
+   "cost": 1.4847
+  },
+  "amc12_2000_p6": {
+   "src": "aime_1983_p1",
+   "class": "no_goals",
+   "own_class": "no_goals",
+   "src_class": "no_goals",
+   "own_tok": 29,
+   "src_tok": 128,
+   "cost": 1.4847
+  },
+  "amc12b_2002_p7": {
+   "src": "induction_1pxpownlt1pnx",
+   "class": "no_goals",
+   "own_class": "no_goals",
+   "src_class": "no_goals",
+   "own_tok": 29,
+   "src_tok": 5,
+   "cost": 1.7579
+  },
+  "induction_1pxpownlt1pnx": {
+   "src": "amc12_2000_p6",
+   "class": "no_goals",
+   "own_class": "no_goals",
+   "src_class": "no_goals",
+   "own_tok": 5,
+   "src_tok": 29,
+   "cost": 1.7579
+  },
+  "mathd_numbertheory_100": {
+   "src": "numbertheory_exk2powkeqapb2mulbpa2_aeq1",
+   "class": "no_goals",
+   "own_class": "no_goals",
+   "src_class": "no_goals",
+   "own_tok": 29,
+   "src_tok": 296,
+   "cost": 2.3231
+  },
+  "mathd_numbertheory_150": {
+   "src": "mathd_numbertheory_100",
+   "class": "no_goals",
+   "own_class": "no_goals",
+   "src_class": "no_goals",
+   "own_tok": 29,
+   "src_tok": 29,
+   "cost": 50.0
+  },
+  "mathd_numbertheory_222": {
+   "src": "mathd_numbertheory_150",
+   "class": "no_goals",
+   "own_class": "no_goals",
+   "src_class": "no_goals",
+   "own_tok": 29,
+   "src_tok": 29,
+   "cost": 50.0
+  },
+  "mathd_numbertheory_234": {
+   "src": "mathd_numbertheory_222",
+   "class": "no_goals",
+   "own_class": "no_goals",
+   "src_class": "no_goals",
+   "own_tok": 29,
+   "src_tok": 29,
+   "cost": 50.0
+  },
+  "mathd_numbertheory_277": {
+   "src": "mathd_numbertheory_234",
+   "class": "no_goals",
+   "own_class": "no_goals",
+   "src_class": "no_goals",
+   "own_tok": 29,
+   "src_tok": 29,
+   "cost": 50.0
+  },
+  "mathd_numbertheory_430": {
+   "src": "mathd_numbertheory_277",
+   "class": "no_goals",
+   "own_class": "no_goals",
+   "src_class": "no_goals",
+   "own_tok": 29,
+   "src_tok": 29,
+   "cost": 50.0
+  },
+  "numbertheory_exk2powkeqapb2mulbpa2_aeq1": {
+   "src": "mathd_numbertheory_430",
+   "class": "no_goals",
+   "own_class": "no_goals",
+   "src_class": "no_goals",
+   "own_tok": 296,
+   "src_tok": 29,
+   "cost": 2.3231
+  },
+  "aime_1994_p3": {
+   "src": "mathd_numbertheory_618",
+   "class": "omega",
+   "own_class": "omega",
+   "src_class": "omega",
+   "own_tok": 58,
+   "src_tok": 42,
+   "cost": 0.3228
+  },
+  "amc12a_2019_p12": {
+   "src": "imo_1977_p6",
+   "class": "omega",
+   "own_class": "omega",
+   "src_class": "omega",
+   "own_tok": 284,
+   "src_tok": 226,
+   "cost": 0.2284
+  },
+  "imo_1977_p6": {
+   "src": "amc12a_2019_p12",
+   "class": "omega",
+   "own_class": "omega",
+   "src_class": "omega",
+   "own_tok": 226,
+   "src_tok": 284,
+   "cost": 0.2284
+  },
+  "imo_1982_p1": {
+   "src": "imo_2001_p6",
+   "class": "omega",
+   "own_class": "omega",
+   "src_class": "omega",
+   "own_tok": 115,
+   "src_tok": 110,
+   "cost": 0.0445
+  },
+  "imo_2001_p6": {
+   "src": "imo_1982_p1",
+   "class": "omega",
+   "own_class": "omega",
+   "src_class": "omega",
+   "own_tok": 110,
+   "src_tok": 115,
+   "cost": 0.0445
+  },
+  "imo_2019_p1": {
+   "src": "mathd_algebra_289",
+   "class": "omega",
+   "own_class": "omega",
+   "src_class": "omega",
+   "own_tok": 95,
+   "src_tok": 100,
+   "cost": 0.0513
+  },
+  "mathd_algebra_289": {
+   "src": "imo_2019_p1",
+   "class": "omega",
+   "own_class": "omega",
+   "src_class": "omega",
+   "own_tok": 100,
+   "src_tok": 95,
+   "cost": 0.0513
+  },
+  "mathd_numbertheory_135": {
+   "src": "mathd_numbertheory_495",
+   "class": "omega",
+   "own_class": "omega",
+   "src_class": "omega",
+   "own_tok": 317,
+   "src_tok": 419,
+   "cost": 0.279
+  },
+  "mathd_numbertheory_314": {
+   "src": "mathd_numbertheory_521",
+   "class": "omega",
+   "own_class": "omega",
+   "src_class": "omega",
+   "own_tok": 190,
+   "src_tok": 174,
+   "cost": 0.088
+  },
+  "mathd_numbertheory_495": {
+   "src": "mathd_numbertheory_135",
+   "class": "omega",
+   "own_class": "omega",
+   "src_class": "omega",
+   "own_tok": 419,
+   "src_tok": 317,
+   "cost": 0.279
+  },
+  "mathd_numbertheory_521": {
+   "src": "mathd_numbertheory_314",
+   "class": "omega",
+   "own_class": "omega",
+   "src_class": "omega",
+   "own_tok": 174,
+   "src_tok": 190,
+   "cost": 0.088
+  },
+  "mathd_numbertheory_559": {
+   "src": "aime_1994_p3",
+   "class": "omega",
+   "own_class": "omega",
+   "src_class": "omega",
+   "own_tok": 35,
+   "src_tok": 58,
+   "cost": 0.5051
+  },
+  "mathd_numbertheory_618": {
+   "src": "mathd_numbertheory_559",
+   "class": "omega",
+   "own_class": "omega",
+   "src_class": "omega",
+   "own_tok": 42,
+   "src_tok": 35,
+   "cost": 0.1823
+  },
+  "aime_1990_p4": {
+   "src": "mathd_numbertheory_227",
+   "class": "other",
+   "own_class": "other",
+   "src_class": "other",
+   "own_tok": 11,
+   "src_tok": 12,
+   "cost": 0.087
+  },
+  "amc12b_2020_p21": {
+   "src": "mathd_numbertheory_457",
+   "class": "other",
+   "own_class": "other",
+   "src_class": "other",
+   "own_tok": 138,
+   "src_tok": 204,
+   "cost": 0.3909
+  },
+  "imosl_2007_algebra_p6": {
+   "src": "aime_1990_p4",
+   "class": "other",
+   "own_class": "other",
+   "src_class": "other",
+   "own_tok": 5,
+   "src_tok": 11,
+   "cost": 0.7885
+  },
+  "mathd_algebra_188": {
+   "src": "mathd_numbertheory_233",
+   "class": "other",
+   "own_class": "other",
+   "src_class": "other",
+   "own_tok": 81,
+   "src_tok": 69,
+   "cost": 0.1603
+  },
+  "mathd_algebra_313": {
+   "src": "mathd_algebra_188",
+   "class": "other",
+   "own_class": "other",
+   "src_class": "other",
+   "own_tok": 95,
+   "src_tok": 81,
+   "cost": 0.1594
+  },
+  "mathd_numbertheory_227": {
+   "src": "imosl_2007_algebra_p6",
+   "class": "other",
+   "own_class": "other",
+   "src_class": "other",
+   "own_tok": 12,
+   "src_tok": 5,
+   "cost": 0.8755
+  },
+  "mathd_numbertheory_233": {
+   "src": "mathd_algebra_313",
+   "class": "other",
+   "own_class": "other",
+   "src_class": "other",
+   "own_tok": 69,
+   "src_tok": 95,
+   "cost": 0.3198
+  },
+  "mathd_numbertheory_457": {
+   "src": "mathd_numbertheory_711",
+   "class": "other",
+   "own_class": "other",
+   "src_class": "other",
+   "own_tok": 204,
+   "src_tok": 131,
+   "cost": 0.4429
+  },
+  "mathd_numbertheory_711": {
+   "src": "amc12b_2020_p21",
+   "class": "other",
+   "own_class": "other",
+   "src_class": "other",
+   "own_tok": 131,
+   "src_tok": 138,
+   "cost": 0.0521
+  },
+  "amc12_2001_p21": {
+   "src": "amc12_2001_p5",
+   "class": "resource",
+   "own_class": "resource",
+   "src_class": "resource",
+   "own_tok": 14,
+   "src_tok": 34,
+   "cost": 0.8873
+  },
+  "amc12_2001_p5": {
+   "src": "mathd_algebra_338",
+   "class": "resource",
+   "own_class": "resource",
+   "src_class": "resource",
+   "own_tok": 34,
+   "src_tok": 55,
+   "cost": 0.481
+  },
+  "amc12a_2020_p4": {
+   "src": "mathd_numbertheory_328",
+   "class": "resource",
+   "own_class": "resource",
+   "src_class": "resource",
+   "own_tok": 34,
+   "src_tok": 34,
+   "cost": 50.0
+  },
+  "mathd_algebra_338": {
+   "src": "amc12a_2020_p4",
+   "class": "resource",
+   "own_class": "resource",
+   "src_class": "resource",
+   "own_tok": 55,
+   "src_tok": 34,
+   "cost": 0.481
+  },
+  "mathd_numbertheory_328": {
+   "src": "amc12_2001_p21",
+   "class": "resource",
+   "own_class": "resource",
+   "src_class": "resource",
+   "own_tok": 34,
+   "src_tok": 14,
+   "cost": 0.8873
+  },
+  "algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778": {
+   "src": "mathd_algebra_114",
+   "class": "rewrite",
+   "own_class": "rewrite",
+   "src_class": "rewrite",
+   "own_tok": 72,
+   "src_tok": 47,
+   "cost": 0.4265
+  },
+  "amc12b_2021_p18": {
+   "src": "algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778",
+   "class": "rewrite",
+   "own_class": "rewrite",
+   "src_class": "rewrite",
+   "own_tok": 76,
+   "src_tok": 72,
+   "cost": 0.0541
+  },
+  "mathd_algebra_114": {
+   "src": "amc12b_2021_p18",
+   "class": "rewrite",
+   "own_class": "rewrite",
+   "src_class": "rewrite",
+   "own_tok": 47,
+   "src_tok": 76,
+   "cost": 0.4806
+  },
+  "aime_1984_p7": {
+   "src": "aime_1991_p9",
+   "class": "simp",
+   "own_class": "simp",
+   "src_class": "simp",
+   "own_tok": 47,
+   "src_tok": 47,
+   "cost": 0.0
+  },
+  "aime_1991_p9": {
+   "src": "aime_1984_p7",
+   "class": "simp",
+   "own_class": "simp",
+   "src_class": "simp",
+   "own_tok": 47,
+   "src_tok": 47,
+   "cost": 0.0
+  },
+  "algebra_2varlineareq_fp3zeq11_3tfm1m5zeqn68_feqn10_zeq7": {
+   "src": "amc12a_2021_p8",
+   "class": "simp",
+   "own_class": "simp",
+   "src_class": "simp",
+   "own_tok": 153,
+   "src_tok": 239,
+   "cost": 0.446
+  },
+  "amc12a_2002_p13": {
+   "src": "mathd_numbertheory_483",
+   "class": "simp",
+   "own_class": "simp",
+   "src_class": "simp",
+   "own_tok": 47,
+   "src_tok": 119,
+   "cost": 0.929
+  },
+  "amc12a_2021_p8": {
+   "src": "algebra_2varlineareq_fp3zeq11_3tfm1m5zeqn68_feqn10_zeq7",
+   "class": "simp",
+   "own_class": "simp",
+   "src_class": "simp",
+   "own_tok": 239,
+   "src_tok": 153,
+   "cost": 0.446
+  },
+  "amc12b_2021_p4": {
+   "src": "mathd_algebra_440",
+   "class": "simp",
+   "own_class": "simp",
+   "src_class": "simp",
+   "own_tok": 13,
+   "src_tok": 11,
+   "cost": 0.1671
+  },
+  "mathd_algebra_440": {
+   "src": "amc12b_2021_p4",
+   "class": "simp",
+   "own_class": "simp",
+   "src_class": "simp",
+   "own_tok": 11,
+   "src_tok": 13,
+   "cost": 0.1671
+  },
+  "mathd_numbertheory_483": {
+   "src": "amc12a_2002_p13",
+   "class": "simp",
+   "own_class": "simp",
+   "src_class": "simp",
+   "own_tok": 119,
+   "src_tok": 47,
+   "cost": 0.929
+  },
+  "aime_1983_p3": {
+   "src": "aime_1984_p1",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "aime_1984_p1": {
+   "src": "aime_1999_p11",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "aime_1999_p11": {
+   "src": "algebra_amgm_sum1toneqn_prod1tonleq1",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "algebra_amgm_sum1toneqn_prod1tonleq1": {
+   "src": "algebra_sum1onsqrt2to1onsqrt10000lt198",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "algebra_sum1onsqrt2to1onsqrt10000lt198": {
+   "src": "amc12a_2003_p23",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "amc12a_2003_p23": {
+   "src": "amc12a_2020_p25",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "amc12a_2020_p25": {
+   "src": "amc12a_2020_p7",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "amc12a_2020_p7": {
+   "src": "amc12a_2021_p9",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "amc12a_2021_p9": {
+   "src": "imo_1969_p2",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "imo_1969_p2": {
+   "src": "imo_1974_p3",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "imo_1974_p3": {
+   "src": "induction_pord1p1on2powklt5on2",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "induction_pord1p1on2powklt5on2": {
+   "src": "induction_prod1p1onk3le3m1onn",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "induction_prod1p1onk3le3m1onn": {
+   "src": "induction_sumkexp3eqsumksq",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "induction_sumkexp3eqsumksq": {
+   "src": "mathd_algebra_158",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "mathd_algebra_158": {
+   "src": "mathd_algebra_196",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "mathd_algebra_196": {
+   "src": "mathd_algebra_215",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "mathd_algebra_215": {
+   "src": "mathd_algebra_342",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "mathd_algebra_342": {
+   "src": "mathd_numbertheory_127",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "mathd_numbertheory_127": {
+   "src": "mathd_numbertheory_237",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "mathd_numbertheory_237": {
+   "src": "mathd_numbertheory_239",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "mathd_numbertheory_239": {
+   "src": "mathd_numbertheory_3",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "mathd_numbertheory_3": {
+   "src": "mathd_numbertheory_343",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "mathd_numbertheory_343": {
+   "src": "mathd_numbertheory_353",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "mathd_numbertheory_353": {
+   "src": "mathd_numbertheory_427",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "mathd_numbertheory_427": {
+   "src": "mathd_numbertheory_447",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "mathd_numbertheory_447": {
+   "src": "mathd_numbertheory_451",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "mathd_numbertheory_451": {
+   "src": "mathd_numbertheory_552",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "mathd_numbertheory_552": {
+   "src": "mathd_numbertheory_764",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "mathd_numbertheory_764": {
+   "src": "aime_1983_p3",
+   "class": "syntax",
+   "own_class": "syntax",
+   "src_class": "syntax",
+   "own_tok": 7,
+   "src_tok": 7,
+   "cost": 50.0
+  },
+  "mathd_algebra_184": {
+   "src": "mathd_algebra_388",
+   "class": "type",
+   "own_class": "type",
+   "src_class": "type",
+   "own_tok": 88,
+   "src_tok": 69,
+   "cost": 0.2432
+  },
+  "mathd_algebra_388": {
+   "src": "numbertheory_notequiv2i2jasqbsqdiv8",
+   "class": "type",
+   "own_class": "type",
+   "src_class": "type",
+   "own_tok": 69,
+   "src_tok": 69,
+   "cost": 0.0
+  },
+  "numbertheory_notequiv2i2jasqbsqdiv8": {
+   "src": "mathd_algebra_184",
+   "class": "type",
+   "own_class": "type",
+   "src_class": "type",
+   "own_tok": 69,
+   "src_tok": 88,
+   "cost": 0.2432
+  },
+  "algebra_9onxpypzleqsum2onxpy": {
+   "src": "algebra_absapbon1pabsapbleqsumabsaon1pabsa",
+   "class": "unknown",
+   "own_class": "unknown",
+   "src_class": "unknown",
+   "own_tok": 148,
+   "src_tok": 158,
+   "cost": 0.0654
+  },
+  "algebra_absapbon1pabsapbleqsumabsaon1pabsa": {
+   "src": "mathd_algebra_288",
+   "class": "unknown",
+   "own_class": "unknown",
+   "src_class": "unknown",
+   "own_tok": 158,
+   "src_tok": 147,
+   "cost": 0.0722
+  },
+  "algebra_bleqa_apbon2msqrtableqambsqon8b": {
+   "src": "mathd_algebra_171",
+   "class": "unknown",
+   "own_class": "unknown",
+   "src_class": "unknown",
+   "own_tok": 9,
+   "src_tok": 9,
+   "cost": 0.0
+  },
+  "amc12a_2020_p15": {
+   "src": "mathd_numbertheory_296",
+   "class": "unknown",
+   "own_class": "unknown",
+   "src_class": "unknown",
+   "own_tok": 390,
+   "src_tok": 175,
+   "cost": 0.8014
+  },
+  "imo_1968_p5_1": {
+   "src": "numbertheory_2pownm1prime_nprime",
+   "class": "unknown",
+   "own_class": "unknown",
+   "src_class": "unknown",
+   "own_tok": 143,
+   "src_tok": 143,
+   "cost": 0.0
+  },
+  "imo_1997_p5": {
+   "src": "mathd_algebra_208",
+   "class": "unknown",
+   "own_class": "unknown",
+   "src_class": "unknown",
+   "own_tok": 63,
+   "src_tok": 43,
+   "cost": 0.3819
+  },
+  "mathd_algebra_171": {
+   "src": "algebra_bleqa_apbon2msqrtableqambsqon8b",
+   "class": "unknown",
+   "own_class": "unknown",
+   "src_class": "unknown",
+   "own_tok": 9,
+   "src_tok": 9,
+   "cost": 0.0
+  },
+  "mathd_algebra_208": {
+   "src": "mathd_numbertheory_321",
+   "class": "unknown",
+   "own_class": "unknown",
+   "src_class": "unknown",
+   "own_tok": 43,
+   "src_tok": 28,
+   "cost": 0.429
+  },
+  "mathd_algebra_263": {
+   "src": "mathd_algebra_293",
+   "class": "unknown",
+   "own_class": "unknown",
+   "src_class": "unknown",
+   "own_tok": 16,
+   "src_tok": 15,
+   "cost": 0.0645
+  },
+  "mathd_algebra_288": {
+   "src": "algebra_9onxpypzleqsum2onxpy",
+   "class": "unknown",
+   "own_class": "unknown",
+   "src_class": "unknown",
+   "own_tok": 147,
+   "src_tok": 148,
+   "cost": 0.0068
+  },
+  "mathd_algebra_293": {
+   "src": "mathd_algebra_263",
+   "class": "unknown",
+   "own_class": "unknown",
+   "src_class": "unknown",
+   "own_tok": 15,
+   "src_tok": 16,
+   "cost": 0.0645
+  },
+  "mathd_numbertheory_296": {
+   "src": "amc12a_2020_p15",
+   "class": "unknown",
+   "own_class": "unknown",
+   "src_class": "unknown",
+   "own_tok": 175,
+   "src_tok": 390,
+   "cost": 0.8014
+  },
+  "mathd_numbertheory_321": {
+   "src": "imo_1997_p5",
+   "class": "unknown",
+   "own_class": "unknown",
+   "src_class": "unknown",
+   "own_tok": 28,
+   "src_tok": 63,
+   "cost": 0.8109
+  },
+  "mathd_numbertheory_5": {
+   "src": "numbertheory_fxeq4powxp6powxp9powx_f2powmdvdf2pown",
+   "class": "unknown",
+   "own_class": "unknown",
+   "src_class": "unknown",
+   "own_tok": 123,
+   "src_tok": 100,
+   "cost": 0.207
+  },
+  "numbertheory_2pownm1prime_nprime": {
+   "src": "imo_1968_p5_1",
+   "class": "unknown",
+   "own_class": "unknown",
+   "src_class": "unknown",
+   "own_tok": 143,
+   "src_tok": 143,
+   "cost": 0.0
+  },
+  "numbertheory_fxeq4powxp6powxp9powx_f2powmdvdf2pown": {
+   "src": "mathd_numbertheory_5",
+   "class": "unknown",
+   "own_class": "unknown",
+   "src_class": "unknown",
+   "own_tok": 100,
+   "src_tok": 123,
+   "cost": 0.207
+  },
+  "algebra_abpbcpcageq3_sumaonsqrtapbgeq3onsqrt2": {
+   "src": "amc12b_2020_p6",
+   "class": "unsolved",
+   "own_class": "unsolved",
+   "src_class": "unsolved",
+   "own_tok": 304,
+   "src_tok": 221,
+   "cost": 0.3189
+  },
+  "algebra_ineq_nto1onlt2m1on": {
+   "src": "mathd_numbertheory_175",
+   "class": "unsolved",
+   "own_class": "unsolved",
+   "src_class": "unsolved",
+   "own_tok": 34,
+   "src_tok": 22,
+   "cost": 0.4353
+  },
+  "amc12b_2020_p6": {
+   "src": "algebra_abpbcpcageq3_sumaonsqrtapbgeq3onsqrt2",
+   "class": "unsolved",
+   "own_class": "unsolved",
+   "src_class": "unsolved",
+   "own_tok": 221,
+   "src_tok": 304,
+   "cost": 0.3189
+  },
+  "imo_1981_p6": {
+   "src": "mathd_numbertheory_341",
+   "class": "unsolved",
+   "own_class": "unsolved",
+   "src_class": "unsolved",
+   "own_tok": 156,
+   "src_tok": 165,
+   "cost": 0.0561
+  },
+  "mathd_numbertheory_175": {
+   "src": "algebra_ineq_nto1onlt2m1on",
+   "class": "unsolved",
+   "own_class": "unsolved",
+   "src_class": "unsolved",
+   "own_tok": 22,
+   "src_tok": 34,
+   "cost": 0.4353
+  },
+  "mathd_numbertheory_341": {
+   "src": "numbertheory_3pow2pownm1mod2pownp3eq2pownp2",
+   "class": "unsolved",
+   "own_class": "unsolved",
+   "src_class": "unsolved",
+   "own_tok": 165,
+   "src_tok": 187,
+   "cost": 0.1252
+  },
+  "numbertheory_3pow2pownm1mod2pownp3eq2pownp2": {
+   "src": "imo_1981_p6",
+   "class": "unsolved",
+   "own_class": "unsolved",
+   "src_class": "unsolved",
+   "own_tok": 187,
+   "src_tok": 156,
+   "cost": 0.1813
+  }
+ }
+}

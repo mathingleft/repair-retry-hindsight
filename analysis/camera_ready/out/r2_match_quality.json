@@ -1,0 +1,172 @@
+{
+ "qwen": {
+  "n": 167,
+  "byte_identical": 1,
+  "same_class": 167,
+  "token_ratio": {
+   "median": 1.2568134171907757,
+   "p90": 5.571428571428571,
+   "max": 27.0
+  },
+  "lexical_jaccard": {
+   "median": 0.14285714285714285,
+   "p25": 0.11538461538461539,
+   "p75": 0.6
+  },
+  "contrasts": {
+   "all": {
+    "n": 167,
+    "F_CE-F_CE_match": {
+     "difference_pp": 7.784431137724551,
+     "ci95_pp": [
+      1.7964071856287425,
+      13.77245508982036
+     ]
+    },
+    "F_E-F_E_match": {
+     "difference_pp": -3.592814371257485,
+     "ci95_pp": [
+      -8.982035928143713,
+      1.7964071856287425
+     ]
+    }
+   },
+   "excl_identical": {
+    "n": 166,
+    "F_CE-F_CE_match": {
+     "difference_pp": 7.83132530120482,
+     "ci95_pp": [
+      1.8072289156626504,
+      13.855421686746988
+     ]
+    },
+    "F_E-F_E_match": {
+     "difference_pp": -3.614457831325301,
+     "ci95_pp": [
+      -9.036144578313253,
+      1.8072289156626504
+     ]
+    }
+   },
+   "well_matched (ratio<=1.25, not identical)": {
+    "n": 81,
+    "F_CE-F_CE_match": {
+     "difference_pp": 9.876543209876543,
+     "ci95_pp": [
+      1.2345679012345678,
+      19.753086419753085
+     ]
+    },
+    "F_E-F_E_match": {
+     "difference_pp": -8.641975308641975,
+     "ci95_pp": [
+      -17.28395061728395,
+      0.0
+     ]
+    }
+   },
+   "low_lexical_overlap (<median, not identical)": {
+    "n": 81,
+    "F_CE-F_CE_match": {
+     "difference_pp": 12.345679012345679,
+     "ci95_pp": [
+      6.172839506172839,
+      19.753086419753085
+     ]
+    },
+    "F_E-F_E_match": {
+     "difference_pp": 0.0,
+     "ci95_pp": [
+      -7.4074074074074066,
+      7.4074074074074066
+     ]
+    }
+   }
+  }
+ },
+ "deepseek": {
+  "n": 137,
+  "byte_identical": 37,
+  "same_class": 137,
+  "token_ratio": {
+   "median": 1.0454545454545454,
+   "p90": 2.2114285714285717,
+   "max": 10.206896551724139
+  },
+  "lexical_jaccard": {
+   "median": 0.30833333333333335,
+   "p25": 0.1111111111111111,
+   "p75": 1.0
+  },
+  "contrasts": {
+   "all": {
+    "n": 137,
+    "F_CE-F_CE_match": {
+     "difference_pp": 0.0,
+     "ci95_pp": [
+      -3.64963503649635,
+      3.64963503649635
+     ]
+    },
+    "F_E-F_E_match": {
+     "difference_pp": -1.4598540145985401,
+     "ci95_pp": [
+      -6.569343065693431,
+      3.64963503649635
+     ]
+    }
+   },
+   "excl_identical": {
+    "n": 100,
+    "F_CE-F_CE_match": {
+     "difference_pp": 0.0,
+     "ci95_pp": [
+      -5.0,
+      5.0
+     ]
+    },
+    "F_E-F_E_match": {
+     "difference_pp": -3.0,
+     "ci95_pp": [
+      -10.0,
+      3.0
+     ]
+    }
+   },
+   "well_matched (ratio<=1.25, not identical)": {
+    "n": 60,
+    "F_CE-F_CE_match": {
+     "difference_pp": -1.6666666666666667,
+     "ci95_pp": [
+      -6.666666666666667,
+      3.3333333333333335
+     ]
+    },
+    "F_E-F_E_match": {
+     "difference_pp": -1.6666666666666667,
+     "ci95_pp": [
+      -8.333333333333332,
+      5.0
+     ]
+    }
+   },
+   "low_lexical_overlap (<median, not identical)": {
+    "n": 67,
+    "F_CE-F_CE_match": {
+     "difference_pp": 0.0,
+     "ci95_pp": [
+      -5.970149253731343,
+      5.970149253731343
+     ]
+    },
+    "F_E-F_E_match": {
+     "difference_pp": -4.477611940298507,
+     "ci95_pp": [
+      -13.432835820895523,
+      4.477611940298507
+     ]
+    }
+   }
+  }
+ }
+}

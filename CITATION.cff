@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "Repair, Retry, and the Cost of Hindsight: code and data"
+authors:
+  - family-names: Li
+    given-names: Jack
+    affiliation: "Department of Computer Science, Stanford University"
+    email: jkli@stanford.edu
+  - family-names: Li
+    given-names: Sophia
+    affiliation: "Department of Computer Science, Stanford University"
+    email: sophyli@stanford.edu
+license: MIT
+repository-code: "https://github.com/mathingleft/repair-retry-hindsight"
+version: "1.0.0"
+date-released: "2026-10-14"
+preferred-citation:
+  type: conference-paper
+  title: "Repair, Retry, and the Cost of Hindsight: Verifier Feedback in Formal Theorem Proving"
+  authors:
+    - family-names: Li
+      given-names: Jack
+    - family-names: Li
+      given-names: Sophia
+  collection-title: "NeurIPS 2026 Workshop on AI for Verifiable Coding"
+  year: 2026
+  notes: "Equal contribution; author order determined by coin flip."

@@ -1,0 +1,102 @@
+{
+ "qwen": {
+  "per_attempt_input_tokens": {
+   "I": 102.81818181818181,
+   "C": null,
+   "CE": null,
+   "E": null
+  },
+  "through_64_attempts": {
+   "C": {
+    "mean_cumulative_input_tokens": 493285.690909091,
+    "mean_success": 22.727272727272727
+   },
+   "CE": {
+    "mean_cumulative_input_tokens": 366102.0272727273,
+    "mean_success": 44.54545454545455
+   },
+   "E": {
+    "mean_cumulative_input_tokens": 110560.94545454546,
+    "mean_success": 63.636363636363626
+   }
+  },
+  "equal_token_budget": {
+   "C": {
+    "memoryless_draws_afforded": 5159.721399749715,
+    "I_minus_repair_pp": 59.09090909090909,
+    "ci95_pp": [
+     35.45454545454545,
+     80.0
+    ]
+   },
+   "CE": {
+    "memoryless_draws_afforded": 3792.4795231733046,
+    "I_minus_repair_pp": 37.27253621177797,
+    "ci95_pp": [
+     10.908517726242998,
+     62.72708166632343
+    ]
+   },
+   "E": {
+    "memoryless_draws_afforded": 1179.0413543130026,
+    "I_minus_repair_pp": 18.123512776363686,
+    "ci95_pp": [
+     -5.577444305894234,
+     41.81818181818182
+    ]
+   }
+  },
+  "I_at_64_attempts_percent": 62.84329512087833,
+  "I_cumulative_input_tokens_64_draws": 6580.363636363636
+ },
+ "deepseek": {
+  "per_attempt_input_tokens": {
+   "I": 143.27272727272728,
+   "C": null,
+   "CE": null,
+   "E": null
+  },
+  "through_64_attempts": {
+   "C": {
+    "mean_cumulative_input_tokens": 487781.7727272727,
+    "mean_success": 24.54545454545455
+   },
+   "CE": {
+    "mean_cumulative_input_tokens": 515452.04545454547,
+    "mean_success": 24.545454545454547
+   },
+   "E": {
+    "mean_cumulative_input_tokens": 132411.80000000002,
+    "mean_success": 67.27272727272727
+   }
+  },
+  "equal_token_budget": {
+   "C": {
+    "memoryless_draws_afforded": 3480.1240213817296,
+    "I_minus_repair_pp": 66.36363636363637,
+    "ci95_pp": [
+     48.18181818181818,
+     81.81818181818183
+    ]
+   },
+   "CE": {
+    "memoryless_draws_afforded": 3699.9181583855966,
+    "I_minus_repair_pp": 66.36363636363637,
+    "ci95_pp": [
+     48.18181818181818,
+     81.81818181818183
+    ]
+   },
+   "E": {
+    "memoryless_draws_afforded": 911.0344357948338,
+    "I_minus_repair_pp": 20.380608536934773,
+    "ci95_pp": [
+     2.059349195399437,
+     39.92264865945593
+    ]
+   }
+  },
+  "I_at_64_attempts_percent": 75.28126053772944,
+  "I_cumulative_input_tokens_64_draws": 9169.454545454546
+ }
+}

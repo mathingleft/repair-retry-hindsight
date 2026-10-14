@@ -1,0 +1,5 @@
+MiniF2F Lean benchmark statements
+Creators: Kunhao Zheng, Jesse Michael Han, Stanislas Polu
+Source: https://github.com/openai/miniF2F
+Lean statements are distributed under Apache-2.0.
+This release retains an inherited Lean 4 conversion, the analyzed subsets, and generated proofs; it is not an upstream MiniF2F checkout.

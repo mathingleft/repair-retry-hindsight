@@ -1,0 +1,124 @@
+{
+  "run": "confirmatory error-content precision run",
+  "date": "2026-08-30",
+  "preregistration": "PREREG_CONFIRM_ERROR_CONTENT_2026-08-30.md",
+  "prereg_commit": "precision_preregistration",
+  "branch": "precision_campaign",
+  "forked_from": {
+    "ref": "baseline_snapshot",
+    "commit": "baseline_snapshot"
+  },
+  "remote_fetch": "FAILED \u2014 repository is private and this environment has no credentials; the cached remote-tracking ref baseline_snapshot was at baseline_snapshot, matching the stated last-known commit. Tip could NOT be independently confirmed.",
+  "arms": [
+    "F_E",
+    "F_E_shuf"
+  ],
+  "n_problems": 167,
+  "k": 4,
+  "blocks": {
+    "b1": {
+      "seed_base": 22073001,
+      "rollouts_rows": 1336,
+      "rollouts_md5": "ab3923aa20aa55ad1a221ff3b0f1ff9f",
+      "verified_rows": 1336,
+      "verified_md5": "c6976dc96cda753d7ae8e2ac39f0abe4"
+    },
+    "b2": {
+      "seed_base": 22073101,
+      "rollouts_rows": 1336,
+      "rollouts_md5": "6427376888ae4ed5d34a497a0401fcc5",
+      "verified_rows": 1336,
+      "verified_md5": "56f0eb65ef687fb2906a28b727ecc83e"
+    },
+    "b3": {
+      "seed_base": 22073201,
+      "rollouts_rows": 1336,
+      "rollouts_md5": "54c0796ffe1ff0371789b71dd8bd4a46",
+      "verified_rows": 1336,
+      "verified_md5": "d360d18227e33579fb95feaae31fb2de"
+    },
+    "b4": {
+      "seed_base": 22073301,
+      "rollouts_rows": 1336,
+      "rollouts_md5": "85f1979479cee1a516063b7223d0f563",
+      "verified_rows": 1336,
+      "verified_md5": "a31dc736641fdabe034d18ee9f135f08"
+    }
+  },
+  "rollouts_total_expected": 5344,
+  "bank": {
+    "path": "bank.jsonl",
+    "md5": "23fb60e57d95c7528ec0d330aa65f215",
+    "expected_md5": "23fb60e57d95c7528ec0d330aa65f215"
+  },
+  "shuffle_map_md5": "90025b483557736dda2ea7d9cb2586b0",
+  "model": {
+    "name": "Qwen3.6-27B",
+    "dtype": "bfloat16",
+    "path": "/scratch/anonymous/hf/hub/models--Qwen--Qwen3.6-27B",
+    "hf_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+    "provenance_gap": "the ORIGINAL run's weights (/scratch/anonymous/models/Qwen3.6-27B) are mode drwx------ under another user and unreadable, so the two snapshots could not be byte-compared. Same public repo Qwen/Qwen3.6-27B."
+  },
+  "decoding": {
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.95,
+    "max_tokens": 16384,
+    "thinking": false,
+    "chat_template_render": "<think>\\n\\n</think>\\n\\n",
+    "top_k_top_p_sent_explicitly": true,
+    "generation_config_applied_by_vllm_0_21": true
+  },
+  "serving": {
+    "engine": "vLLM",
+    "version": "0.21.0",
+    "tensor_parallel": 4,
+    "max_model_len": 131072,
+    "max_num_seqs": 64,
+    "concurrency": 48,
+    "flags": [
+      "--disable-custom-all-reduce",
+      "--skip-mm-profiling"
+    ],
+    "env": {
+      "VLLM_USE_FLASHINFER_SAMPLER": "0"
+    },
+    "original_stack": "vLLM 0.28 in /scratch/anonymous/vllm-env (unreadable to anonymous)"
+  },
+  "python_env": {
+    "vllm": "0.21.0",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.8.0.dev0",
+    "numpy": "2.3.5"
+  },
+  "verifier": {
+    "kimina_src": "/scratch/anonymous/kimina-src",
+    "lean": "v4.29.0",
+    "timeout_s": 120,
+    "max_repl_mem": "12G",
+    "max_repls": 8,
+    "readline_patch": "limit=REPL_STREAM_LIMIT (256 MiB)",
+    "sorry_screen": "declaration uses\\s+[`'\u2018\\\"]?sorry"
+  },
+  "seeds": {
+    "b1": 22073001,
+    "b2": 22073101,
+    "b3": 22073201,
+    "b4": 22073301
+  },
+  "jobs": {
+    "gate1_probe": 1704046,
+    "generation": "1704050",
+    "verification": "1704052",
+    "failed_boot_attempts": [
+      1704017,
+      1704020,
+      1704024,
+      1704025,
+      1704026,
+      1704038,
+      1704041,
+      1704043
+    ]
+  }
+}

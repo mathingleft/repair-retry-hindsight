@@ -1,0 +1,78 @@
+{
+ "qwen": {
+  "C": {
+   "post_initial_attempts": 5733,
+   "exact_percent": 82.15593929879644,
+   "near_0_9_percent": 89.83080411651841,
+   "mean_max_similarity": 0.9532566867273571
+  },
+  "CE": {
+   "post_initial_attempts": 4300,
+   "exact_percent": 74.53488372093024,
+   "near_0_9_percent": 86.37209302325581,
+   "mean_max_similarity": 0.9341830014029239
+  },
+  "CE_s": {
+   "post_initial_attempts": 5437,
+   "exact_percent": 84.60548096376678,
+   "near_0_9_percent": 90.96928453191099,
+   "mean_max_similarity": 0.9545105144469875
+  },
+  "CE_m": {
+   "post_initial_attempts": 5755,
+   "exact_percent": 81.82450043440487,
+   "near_0_9_percent": 90.23457862728063,
+   "mean_max_similarity": 0.9524717276022359
+  },
+  "E": {
+   "post_initial_attempts": 3743,
+   "exact_percent": 0.026716537536735238,
+   "near_0_9_percent": 0.45418113812449906,
+   "mean_max_similarity": 0.34943534024487466
+  },
+  "E_m": {
+   "post_initial_attempts": 4055,
+   "exact_percent": 0.5178791615289766,
+   "near_0_9_percent": 1.0357583230579532,
+   "mean_max_similarity": 0.3248383110362472
+  }
+ },
+ "deepseek": {
+  "C": {
+   "post_initial_attempts": 5714,
+   "exact_percent": 83.21666083304166,
+   "near_0_9_percent": 93.40217010850543,
+   "mean_max_similarity": 0.9734586098057058
+  },
+  "CE": {
+   "post_initial_attempts": 5734,
+   "exact_percent": 84.53086850366236,
+   "near_0_9_percent": 94.2448552493896,
+   "mean_max_similarity": 0.9760010847258519
+  },
+  "CE_s": {
+   "post_initial_attempts": 5734,
+   "exact_percent": 84.1123125217998,
+   "near_0_9_percent": 93.77397976979421,
+   "mean_max_similarity": 0.9739993206041305
+  },
+  "CE_m": {
+   "post_initial_attempts": 5793,
+   "exact_percent": 85.36164336267909,
+   "near_0_9_percent": 94.1826342137062,
+   "mean_max_similarity": 0.9760349693601557
+  },
+  "E": {
+   "post_initial_attempts": 3347,
+   "exact_percent": 6.244397968329848,
+   "near_0_9_percent": 19.898416492381237,
+   "mean_max_similarity": 0.6415602862435419
+  },
+  "E_m": {
+   "post_initial_attempts": 2747,
+   "exact_percent": 5.169275573352748,
+   "near_0_9_percent": 17.87404441208591,
+   "mean_max_similarity": 0.6343649379532126
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+  "rows": 80979,
+  "by_arm": {
+    "deepseek/C": 5824,
+    "deepseek/CE": 5844,
+    "deepseek/CE_m": 5903,
+    "deepseek/CE_s": 5844,
+    "deepseek/E_s": 2857,
+    "deepseek/f": 3457,
+    "deepseek/memI": 7040,
+    "qwen/C": 5843,
+    "qwen/CE": 4410,
+    "qwen/CE_m": 5865,
+    "qwen/CE_s": 5547,
+    "qwen/E_s": 4165,
+    "qwen/assert": 3697,
+    "qwen/f": 3853,
+    "qwen/memI": 7040,
+    "qwen/noise": 3790
+  },
+  "prompt_rerender_check": {
+    "qwen": {
+      "ce_attempts_checked": 1500,
+      "max_abs_diff": 0,
+      "mean_diff": 0.0
+    },
+    "deepseek": {
+      "ce_attempts_checked": 1500,
+      "max_abs_diff": 3,
+      "mean_diff": -0.042
+    }
+  }
+}

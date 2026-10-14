@@ -1,0 +1,34 @@
+==============================================================================================
+COMBINED OLD + NEW ESTIMATE — preregistered (PREREG section 16)
+==============================================================================================
+  batch 1 (baseline_snapshot, vLLM 0.28, R=1): +1.20 pp  SE 2.68  95% CI [-4.10, +6.50]
+  batch 2 (new, vLLM 0.21, R=4):     +1.65 pp  SE 1.22  95% CI [-0.75, +4.04]   <- PRIMARY
+
+  fixed-effect inverse-variance combination (weights 0.171 / 0.829):
+    +1.57 pp  SE 1.11  95% CI [-0.61, +3.75]  width 4.35 pp
+    heterogeneity: Cochran Q = 0.023 (1 df), p = 0.879, I^2 = 0.0%
+    batch difference (old - new): -0.45 pp  95% CI [-6.23, +5.33]  (PREREG 15.8, the stack-effect check)
+    -> no evidence of a batch/stack effect; the combined estimate is reportable as the
+       prespecified secondary.
+
+  Raw rollouts were NOT pooled across stacks; each batch's SE is computed within batch.
+
+==============================================================================================
+HETEROGENEITY ACROSS MODEL AND INSTRUCTION REGIME (descriptive; NEVER averaged)
+==============================================================================================
+  (correct minus shuffled; bank.jsonl = 167 problems, bank2.jsonl = 137 DIFFERENT problems)
+  Qwen3.6-27B  instruction     [bank 1]        n=167   41 vs  39   +1.20 pp [ -4.06,  +6.46]
+  Qwen3.6-27B  no instruction  [bank 1]        n=167   32 vs  29   +1.80 pp [ -3.33,  +6.92]
+  DeepSeek-Prover-V2-7B instruction [bank 2]   n=137   30 vs  32   -1.46 pp [ -5.51,  +2.59]
+  DeepSeek-Prover-V2-7B no instr    [bank 2]   n=137   32 vs  32   +0.00 pp [ -4.06,  +4.06]
+  The two banks are NOT interchangeable: bank2 was built from the prover's OWN failures
+  (build_bank2.py) and has 137 problems. Their percentage points are not commensurable and
+  no pooled average across banks is reported.
+
+==============================================================================================
+PRESENCE vs CONTENT (PREREG section 18) — reported separately, never merged
+==============================================================================================
+  PRESENCE: F_E vs F (error block vs none)     n=167   41 vs  33   +4.79 pp [ -1.40, +10.98]
+  CONTENT:  F_E vs F_E_shuf (baseline_snapshot block)    n=167   41 vs  39   +1.20 pp [ -4.06,  +6.46]
+  The presence contrast confounds the diagnostic's information with its presence, formatting,
+  length and token count. Only the content contrast isolates problem-specific correctness.

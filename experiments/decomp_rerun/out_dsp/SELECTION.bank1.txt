@@ -1,0 +1,15 @@
+cold screen: 137 problems, 4384 draws (61 non-ok rows), n per problem = [32]
+cold-rate distribution: zero 92, (0, .05] 6, (.05, .2] 10, > .2 29
+
+selected (qwen target -> prover problem: cold pass / n, one-step passes / samples):
+  0.1758 -> amc12b_2021_p4                     6/32  one-step 28/68
+  0.1602 -> mathd_numbertheory_100             5/32  one-step 2/68
+  0.0352 -> mathd_algebra_362                  1/32  one-step 3/68
+  0.0156 -> algebra_2varlineareq_fp3zeq11_3tfm1m5zeqn68_feqn10_zeq7   0/32  one-step 1/68
+  0.0117 -> mathd_numbertheory_150             0/32  one-step 1/68
+  0.0078 -> imo_1968_p5_1                      0/32  one-step 0/68
+  0.0039 -> mathd_numbertheory_277             0/32  one-step 0/68
+  0.0000 -> mathd_numbertheory_552             0/32  one-step 0/68
+  0.0000 -> algebra_absapbon1pabsapbleqsumabsaon1pabsa   0/32  one-step 0/68
+  0.0000 -> mathd_numbertheory_711             0/32  one-step 0/68
+  0.0000 -> mathd_numbertheory_239             0/32  one-step 0/68

@@ -1,0 +1,33 @@
+{
+  "profile": "review",
+  "omitted_optional_full_traces": [
+    "experiments/decomp_rerun/out_codearms/CE_rows.jsonl.gz",
+    "experiments/decomp_rerun/out_codearms/CE_s_rows.jsonl.gz",
+    "experiments/decomp_rerun/out_codearms/C_rows.jsonl.gz",
+    "experiments/decomp_rerun/out_codearms/E_s_rows.jsonl.gz",
+    "experiments/decomp_rerun/out_codearms/CE_m_rows.jsonl.gz",
+    "experiments/decomp_rerun/out_dsp_codearms/CE_rows.jsonl.gz",
+    "experiments/decomp_rerun/out_dsp_codearms/CE_s_rows.jsonl.gz",
+    "experiments/decomp_rerun/out_dsp_codearms/C_rows.jsonl.gz",
+    "experiments/decomp_rerun/out_dsp_codearms/E_s_rows.jsonl.gz",
+    "experiments/decomp_rerun/out_dsp_codearms/CE_m_rows.jsonl.gz"
+  ],
+  "omitted_unreported_legacy_runs": [
+    "experiments/decomp_rerun/out/depth_blind.jsonl",
+    "experiments/decomp_rerun/out/depth_blind_F.jsonl"
+  ],
+  "diagnostic_donor_records": [
+    "experiments/decomp_rerun/out_codearms/E_s_donors.jsonl",
+    "experiments/decomp_rerun/out_codearms/CE_m_donors.jsonl",
+    "experiments/decomp_rerun/out_dsp_codearms/CE_m_donors.jsonl"
+  ],
+  "ce_m_source_commit": "c2c361656670037d0d8ebb45ce08bfd489e5500a",
+  "reported_sequential_arms": {
+    "manuscript": ["I", "C", "CE", "CE_m", "CE_s", "E", "E_m"],
+    "raw_records": ["memI", "C", "CE", "CE_m", "CE_s", "f", "E_s"]
+  },
+  "all_reported_outcomes_included": true,
+  "additional_data_required_for_reproduction": false,
+  "storage": "lossless xz for large text records; scripts/unpack_data.py restores original bytes",
+  "restored_files": 49
+}

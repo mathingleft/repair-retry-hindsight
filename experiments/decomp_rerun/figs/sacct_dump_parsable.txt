@@ -1,0 +1,101 @@
+JobID|JobName|Elapsed|AllocTRES|State
+1698619|nvidia-smi|00:00:07|billing=2,cpu=2,energy=1239,gres/gpu=1,mem=8000M,node=1|COMPLETED
+1698622|kimina-build|00:00:12|billing=16,cpu=16,energy=1444,mem=32G,node=1|FAILED
+1698623|kimina-build|00:00:06|billing=16,cpu=16,energy=598,mem=32G,node=1|FAILED
+1698624|decomp-gpu|00:00:00||CANCELLED by 470706
+1698625|kimina-build|00:00:07|billing=16,cpu=16,energy=817,mem=32G,node=1|FAILED
+1698627|kimina-build|00:08:28|billing=16,cpu=16,energy=63404,mem=32G,node=1|COMPLETED
+1698628|decomp-gpu2|00:00:00||CANCELLED by 470706
+1698629|decomp-gpu|00:00:00||CANCELLED by 470706
+1698687|decomp-fp8|00:00:00||CANCELLED by 470706
+1698703|decomp-fp8|00:00:04|billing=12,cpu=12,energy=798,gres/gpu=1,mem=40G,node=1|FAILED
+1698704|probe-gpu1|00:00:15|billing=2,cpu=2,energy=2809,gres/gpu=1,mem=4G,node=1|COMPLETED
+1698705|decomp-fp8|00:00:02|billing=12,cpu=12,energy=450,gres/gpu=1,mem=40G,node=1|FAILED
+1698706|probe-gpu1|00:00:02|billing=2,cpu=2,energy=401,gres/gpu=1,mem=4G,node=1|FAILED
+1698707|decomp-fp8|00:00:55|billing=10,cpu=10,energy=10570,gres/gpu=1,mem=32G,node=1|CANCELLED by 470706
+1698708|decomp-fp8|00:08:22|billing=10,cpu=10,energy=100117,gres/gpu=1,mem=32G,node=1|CANCELLED by 470706
+1698712|probe-fi|00:00:17|billing=4,cpu=4,energy=3406,gres/gpu=1,mem=12G,node=1|FAILED
+1698713|probe-fi|00:01:08|billing=4,cpu=4,energy=13972,gres/gpu=1,mem=12G,node=1|FAILED
+1698716|probe-ls|00:00:02|billing=2,cpu=2,energy=493,mem=1G,node=1|COMPLETED
+1698717|probe-fi|00:01:09|billing=4,cpu=4,energy=14139,gres/gpu=1,mem=12G,node=1|COMPLETED
+1698718|decomp-fp8|00:03:38|billing=10,cpu=10,energy=43970,gres/gpu=1,mem=32G,node=1|CANCELLED by 470706
+1698719|decomp-fp8|00:14:21|billing=10,cpu=10,energy=168792,gres/gpu=1,mem=32G,node=1|FAILED
+1698741|decomp-fp8|00:00:00||CANCELLED by 470706
+1698744|decomp-fp8-slim|00:00:00||CANCELLED by 470706
+1698745|probe-oat03|00:00:03|billing=2,cpu=2,energy=583,mem=1G,node=1|COMPLETED
+1698746|decomp-tp4-oat03|00:00:00||CANCELLED by 470706
+1698747|decomp-fp8-oat03|00:00:00||CANCELLED by 470706
+1698748|decomp-tp4-oat03|12:00:00|billing=20,cpu=20,energy=10033545,gres/gpu=4,mem=72G,node=1|TIMEOUT
+1698755|probe-kimina|00:10:05|billing=8,cpu=8,energy=78142,mem=24G,node=1|FAILED
+1699133|decomp-cont|00:00:00||CANCELLED by 470706
+1699134|probe-kimina|00:00:10|billing=8,cpu=8,energy=2221,mem=24G,node=1|COMPLETED
+1699135|probe-kimina|00:01:59|billing=8,cpu=8,energy=21122,mem=24G,node=1|COMPLETED
+1699136|decomp-verify|00:13:00|billing=16,cpu=16,energy=101051,mem=48G,node=1|FAILED
+1699137|decomp-depth|05:06:19|billing=20,cpu=20,energy=4002973,gres/gpu=4,mem=72G,node=1|CANCELLED by 470706
+1699577|decomp-tail-tp2|00:14:31|billing=12,cpu=12,energy=167724,gres/gpu=2,mem=40G,node=1|FAILED
+1699584|decomp-cont2|00:11:50|billing=20,cpu=20,energy=149933,gres/gpu=4,mem=72G,node=1|COMPLETED
+1701029|decomp-verify|01:02:48|billing=16,cpu=16,energy=847841,mem=48G,node=1|CANCELLED by 470706
+1701159|decomp-gen-nothink|02:35:07|billing=20,cpu=20,energy=2107679,gres/gpu=4,mem=72G,node=1|COMPLETED
+1701161|decomp-depth-nothink|00:32:10|billing=20,cpu=20,energy=441398,gres/gpu=4,mem=72G,node=1|CANCELLED by 470706
+1701169|decomp-verify-stream|02:06:37|billing=16,cpu=16,energy=1729210,mem=48G,node=1|CANCELLED by 470706
+1701257|decomp-verify-stream|00:01:34|billing=16,cpu=16,energy=15701,mem=48G,node=1|CANCELLED by 470706
+1701262|decomp-verify-stream|00:32:30|billing=16,cpu=16,energy=348257,mem=48G,node=1|FAILED
+1701316|decomp-depth-nothink2|00:01:42|billing=20,cpu=20,energy=19880,gres/gpu=4,mem=72G,node=1|FAILED
+1701325|lake-probe|00:00:12|billing=2,cpu=2,energy=1981,mem=2G,node=1|COMPLETED
+1701326|kimina-node-probe|00:01:23|billing=6,cpu=6,energy=14706,mem=16G,node=1|COMPLETED
+1701336|port-probe|00:00:03|billing=2,cpu=2,energy=451,mem=1G,node=1|FAILED
+1701339|decomp-noise-N|00:34:30|billing=20,cpu=20,energy=457470,gres/gpu=4,mem=72G,node=1|COMPLETED
+1701340|decomp-verify-stream|00:35:12|billing=16,cpu=16,energy=268313,mem=48G,node=1|COMPLETED
+1701342|decomp-ablate-ISPD|00:38:49|billing=20,cpu=20,energy=521255,gres/gpu=4,mem=72G,node=1|CANCELLED by 470706
+1701343|decomp-verify-stream|00:42:55|billing=16,cpu=16,energy=331912,mem=48G,node=1|FAILED
+1701344|net-probe|00:00:00|billing=2,cpu=2,energy=65,mem=1G,node=1|COMPLETED
+1701379|decomp-noise-N2to5|03:16:51|billing=20,cpu=20,energy=2631528,gres/gpu=4,mem=72G,node=1|COMPLETED
+1701380|decomp-verify-stream|00:12:09|billing=16,cpu=16,energy=88390,mem=48G,node=1|CANCELLED by 470706
+1701383|decomp-depth-fp8|00:00:42|billing=10,cpu=10,energy=8661,gres/gpu=1,mem=24000M,node=1|FAILED
+1701388|decomp-ablate-ISPD2|00:00:00||CANCELLED by 470706
+1701389|kimina-server|00:00:03|billing=16,cpu=16,energy=383,mem=48G,node=1|FAILED
+1701390|decomp-depth-fp8b|00:00:43|billing=6,cpu=6,energy=15743,gres/gpu=1,mem=24000M,node=1|FAILED
+1701392|kimina-server|00:00:12|billing=16,cpu=16,energy=1506,mem=48G,node=1|CANCELLED by 470706
+1701394|repl-raw|00:01:31|billing=4,cpu=4,energy=10973,mem=12G,node=1|COMPLETED
+1701396|kimina-wheat-probe|00:00:06|billing=6,cpu=6,energy=746,mem=16G,node=1|COMPLETED
+1701397|tc-probe|00:00:00|billing=2,cpu=2,energy=65,mem=1G,node=1|COMPLETED
+1701398|tc-probe|00:00:01|billing=2,cpu=2,energy=164,mem=1G,node=1|COMPLETED
+1701400|decomp-depth-fp8c|00:01:03|billing=6,cpu=6,energy=22753,gres/gpu=1,mem=24000M,node=1|FAILED
+1701401|kimina-server|00:00:32|billing=16,cpu=16,energy=4006,mem=48G,node=1|CANCELLED by 470706
+1701402|repl-raw2|00:02:31|billing=4,cpu=4,energy=18201,mem=12G,node=1|COMPLETED
+1701403|repl-raw3|00:00:06|billing=4,cpu=4,energy=773,mem=12G,node=1|COMPLETED
+1701405|lean-env-probe|00:00:52|billing=4,cpu=4,energy=6076,mem=12G,node=1|COMPLETED
+1701406|kimina-rebuild|00:01:45|billing=16,cpu=16,energy=14000,mem=32G,node=1|FAILED
+1701418|kimina-rebuild|00:02:46|billing=16,cpu=16,energy=20444,mem=32G,node=1|COMPLETED
+1701419|decomp-verify-stream|02:47:25|billing=16,cpu=16,energy=1356500,mem=48G,node=1|COMPLETED
+1701420|decomp-depth-fp8e|00:37:50|billing=6,cpu=6,energy=459884,gres/gpu=1,mem=24000M,node=1|CANCELLED by 470706
+1701421|decomp-depth-bf16|07:33:05|billing=20,cpu=20,energy=6150887,gres/gpu=4,mem=72G,node=1|COMPLETED
+1701463|decomp-depth-fp8f|08:00:06|billing=6,cpu=6,energy=5529145,gres/gpu=1,mem=24000M,node=1|TIMEOUT
+1701499|decomp-ext|00:50:08|billing=22,cpu=22,energy=669416,gres/gpu=4,mem=80G,node=1|COMPLETED
+1701501|decomp-verify-ext|00:51:07|billing=16,cpu=16,energy=432691,mem=48G,node=1|COMPLETED
+1701559|decomp-m2|00:06:40|billing=22,cpu=22,energy=82688,gres/gpu=4,mem=80G,node=1|COMPLETED
+1701560|decomp-verify-m2|00:06:48|billing=16,cpu=16,energy=54319,mem=48G,node=1|COMPLETED
+1701597|decomp-m2g1|00:37:52|billing=12,cpu=12,energy=832785,gres/gpu=1,mem=40G,node=1|COMPLETED
+1701598|decomp-verify-m2|01:14:03|billing=16,cpu=16,energy=762706,mem=48G,node=1|COMPLETED
+1701804|decomp-depth-cont|03:11:22|billing=20,cpu=20,energy=2602969,gres/gpu=4,mem=72G,node=1|COMPLETED
+1702203|decomp-depth-blind|01:41:47|billing=20,cpu=20,energy=1455695,gres/gpu=4,mem=72G,node=1|COMPLETED
+1702205|decomp-depth-blindI|05:57:47|billing=20,cpu=20,energy=4929032,gres/gpu=4,mem=72G,node=1|COMPLETED
+1702350|decomp-noi|02:17:01|billing=22,cpu=22,energy=1862838,gres/gpu=4,mem=80G,node=1|COMPLETED
+1702351|decomp-verify-noi|02:18:44|billing=16,cpu=16,energy=1154544,mem=48G,node=1|COMPLETED
+1702389|decomp-reverify|00:15:27|billing=16,cpu=16,energy=168034,mem=48G,node=1|COMPLETED
+1702390|decomp-reverify|00:06:47|billing=16,cpu=16,energy=72171,mem=48G,node=1|COMPLETED
+1702391|decomp-depth-resume|03:18:25|billing=20,cpu=20,energy=2588475,gres/gpu=4,mem=72G,node=1|COMPLETED
+1702468|decomp-m2shuf|00:08:40|billing=12,cpu=12,energy=89907,gres/gpu=1,mem=40G,node=1|COMPLETED
+1702469|decomp-verify-m2ext|00:25:19|billing=16,cpu=16,energy=263828,mem=48G,node=1|COMPLETED
+1703204|decomp-noi-r2|00:00:00||CANCELLED by 470706
+1703219|decomp-noi-r2-g2|00:37:27|billing=14,cpu=14,energy=501324,gres/gpu=2,mem=48G,node=1|COMPLETED
+1703220|decomp-verify-noi-r2|00:39:13|billing=16,cpu=16,energy=338179,mem=48G,node=1|COMPLETED
+1703221|decomp-depth-blindF-g2|03:18:00|billing=14,cpu=14,energy=2533595,gres/gpu=2,mem=48G,node=1|COMPLETED
+1703484|decomp-m2noi|00:20:32|billing=12,cpu=12,energy=238627,gres/gpu=1,mem=40G,node=1|COMPLETED
+1703485|decomp-verify-m2noi|00:56:25|billing=16,cpu=16,energy=563276,mem=48G,node=1|COMPLETED
+1705311|decomp-ext2|00:00:00||CANCELLED by 470706
+1705312|decomp-m2ext2|00:05:40|billing=12,cpu=12,energy=89995,gres/gpu=1,mem=40G,node=1|COMPLETED
+1705314|decomp-verify-m2ext2|00:15:30|billing=16,cpu=16,energy=247868,mem=48G,node=1|COMPLETED
+1705331|decomp-ext2-g2|00:48:06|billing=14,cpu=14,energy=821221,gres/gpu=2,mem=48G,node=1|COMPLETED
+1705332|decomp-verify-ext2|00:49:05|billing=16,cpu=16,energy=413760,mem=48G,node=1|COMPLETED
+1705337|decomp-reverify-crash|00:02:52|billing=10,cpu=10,energy=29538,mem=32G,node=1|COMPLETED

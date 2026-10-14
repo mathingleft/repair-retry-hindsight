@@ -1,0 +1,4 @@
+# Optional: fresh generation, proof reverification, or tokenizer recount.
+aiohttp==3.14.3
+requests==2.34.2
+transformers==5.16.1

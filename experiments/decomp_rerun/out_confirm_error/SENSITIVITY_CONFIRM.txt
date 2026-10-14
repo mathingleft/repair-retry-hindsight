@@ -1,0 +1,49 @@
+=== THE 2 UNRESOLVED INFRA ROWS ===
+  b2 F_E_shuf   imo_1974_p3                                   k=3 status=FAIL
+     verifier crash (REPL died / HTTP error): 500 Server Error: Internal Server Error for url: http://localhost:8120/verify
+  b3 F_E_shuf   amc12_2001_p5                                 k=2 status=FAIL
+     verifier crash (REPL died / HTTP error): 500 Server Error: Internal Server Error for url: http://localhost:8120/verify
+
+=== SENSITIVITY 1: unresolved infra rows (PREREG 10.4 / 15.1) ===
+  PRIMARY rule: infra counted as FAIL             +1.65 pp  95% CI [ -0.75,  +4.04]  +/-5pp equiv: YES
+  infra rows counted as PASS                      +1.35 pp  95% CI [ -1.08,  +3.78]  +/-5pp equiv: YES
+  exclusion variant: only 2 (block,arm,problem) cells affected; in each the problem is solved elsewhere or unsolved in all 4 samples -> see below
+    b2 F_E_shuf imo_1974_p3: 0/4 PASS among the other samples -> solved indicator could only go 0->1
+    b3 F_E_shuf amc12_2001_p5: 0/4 PASS among the other samples -> solved indicator could only go 0->1
+
+=== SENSITIVITY 2: truncated rows excluded (PREREG 15.2) ===
+  PRIMARY (truncated counted as FAIL)             +1.65 pp  95% CI [ -0.75,  +4.04]  +/-5pp equiv: YES
+  truncated rows excluded                         +1.65 pp  95% CI [ -0.75,  +4.04]  +/-5pp equiv: YES
+
+=== THE ONE STRIKING SECONDARY: shuffle-reuse strata (PREREG 15.4) ===
+  rarely-reused  (<5x)  n=101   +4.70 pp [ +1.79,  +7.61]
+  heavily-reused (>=5x) n= 66   -3.03 pp [ -7.17,  +1.11]
+  INTERACTION (rarely - heavily): +7.73 pp  95% CI [+2.70, +12.76]
+  two-sided p ~= 0.0026
+  NOTE: 1 of 8 preregistered SECONDARY analyses, unadjusted for multiplicity.
+  The baseline_snapshot block showed the same sign and ordering (+2.97 vs -1.52 pp), so the pattern
+  replicates across two independent batches on different serving stacks.
+
+=== INTERACTION DECOMPOSED BY ARM (which arm moves?) ===
+               stratum    n   F_E solved/blk   F_E_shuf solved/blk     diff
+   rarely-reused (<5x)  101   22.50 (22.3%)        17.75 (17.6%)     +4.70pp
+ heavily-reused (>=5x)   66   15.25 (23.1%)        17.25 (26.1%)     -3.03pp
+
+  F_E is FLAT across strata (22.3% vs 23.1%), as it must be: the shuffle assignment is random and
+  does not touch the F_E arm, so the strata are balanced on problem difficulty. ALL of the movement
+  is in F_E_shuf (17.6% -> 26.1%).
+
+  What the heavily-reused diagnostics are (shuffled text actually assigned, median 179 chars):
+    x27  "unexpected token 'in'; expected ','"
+    x25  "Unknown identifier `begin`; unexpected token 'have'; expected command; Invalid `end`: ..."
+    x 9  "Unknown identifier `begin`; unexpected token 'have'; expected command; Invalid `end`: ..."
+  These are generic LEAN 3 SYNTAX errors (begin/end blocks, `in`), carrying no mathematical content.
+  Rarely-reused diagnostics are longer (median 389 vs 179 chars) and substantive-but-wrong.
+
+  READING: the "shuffled diagnostic" comparator is not one treatment. A generic parse error is
+  nearly harmless — plausibly a mild "your syntax was invalid" nudge — while a specific but wrong
+  mathematical diagnostic actively misleads. Because arms.shuffled_error() draws WITH REPLACEMENT
+  over ids, and 171 ids share only 95 distinct texts, the realised comparator mixture is
+  over-weighted toward these common generic errors relative to the F_E arm's own marginal: 66 of 167
+  problems (40%) received one. The primary +1.65 pp is an average over that mixture and is therefore
+  likely BIASED TOWARD ZERO relative to a properly type-matched derangement.

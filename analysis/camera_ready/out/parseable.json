@@ -1,0 +1,263 @@
+{
+ "rule": "bank statement matches [\u2211\u220f]\\s*\\S+\\s+in\\s",
+ "models": {
+  "qwen": {
+   "problems": 167,
+   "unparseable": 30,
+   "parseable": 137,
+   "unparseable_ids": [
+    "aime_1983_p3",
+    "aime_1984_p1",
+    "aime_1999_p11",
+    "algebra_amgm_sum1toneqn_prod1tonleq1",
+    "algebra_sum1onsqrt2to1onsqrt10000lt198",
+    "amc12a_2003_p23",
+    "amc12a_2020_p25",
+    "amc12a_2020_p7",
+    "amc12a_2021_p9",
+    "imo_1969_p2",
+    "imo_1974_p3",
+    "imosl_2007_algebra_p6",
+    "induction_pord1p1on2powklt5on2",
+    "induction_prod1p1onk3le3m1onn",
+    "induction_sumkexp3eqsumksq",
+    "mathd_algebra_158",
+    "mathd_algebra_196",
+    "mathd_algebra_215",
+    "mathd_algebra_342",
+    "mathd_numbertheory_127",
+    "mathd_numbertheory_237",
+    "mathd_numbertheory_239",
+    "mathd_numbertheory_3",
+    "mathd_numbertheory_343",
+    "mathd_numbertheory_353",
+    "mathd_numbertheory_427",
+    "mathd_numbertheory_447",
+    "mathd_numbertheory_451",
+    "mathd_numbertheory_552",
+    "mathd_numbertheory_764"
+   ],
+   "attempts_on_unparseable": 4320,
+   "passes_on_unparseable": 0,
+   "contrasts": {
+    "all": {
+     "F_CE-I": [
+      -2.9940119760479043,
+      -8.383233532934131,
+      2.3952095808383236
+     ],
+     "F_C-F": [
+      -8.982035928143713,
+      -15.568862275449103,
+      -2.3952095808383236
+     ],
+     "F_CE-F_C": [
+      13.17365269461078,
+      7.18562874251497,
+      19.760479041916167
+     ],
+     "F_CE-F_CE_m": [
+      7.784431137724551,
+      1.7964071856287425,
+      13.77245508982036
+     ],
+     "F_E-F_E_m": [
+      -3.592814371257485,
+      -8.982035928143713,
+      1.7964071856287425
+     ],
+     "F_C_o-F_C": [
+      14.37125748502994,
+      7.784431137724551,
+      21.55688622754491
+     ],
+     "matched interaction": [
+      11.377245508982035,
+      2.9940119760479043,
+      20.35928143712575
+     ],
+     "instruction interaction": [
+      10.179640718562874,
+      2.3952095808383236,
+      17.964071856287426
+     ]
+    },
+    "parseable": {
+     "F_CE-I": [
+      -3.64963503649635,
+      -10.218978102189782,
+      2.9197080291970803
+     ],
+     "F_C-F": [
+      -10.948905109489052,
+      -18.97810218978102,
+      -2.9197080291970803
+     ],
+     "F_CE-F_C": [
+      16.05839416058394,
+      8.75912408759124,
+      23.357664233576642
+     ],
+     "F_CE-F_CE_m": [
+      9.48905109489051,
+      2.18978102189781,
+      16.78832116788321
+     ],
+     "F_E-F_E_m": [
+      -4.37956204379562,
+      -10.948905109489052,
+      2.18978102189781
+     ],
+     "F_C_o-F_C": [
+      17.51824817518248,
+      9.48905109489051,
+      25.547445255474454
+     ],
+     "matched interaction": [
+      13.86861313868613,
+      3.64963503649635,
+      24.817518248175183
+     ],
+     "instruction interaction": [
+      12.408759124087592,
+      2.9197080291970803,
+      21.897810218978105
+     ]
+    }
+   }
+  },
+  "deepseek": {
+   "problems": 137,
+   "unparseable": 30,
+   "parseable": 107,
+   "unparseable_ids": [
+    "aime_1983_p3",
+    "aime_1984_p1",
+    "aime_1999_p11",
+    "algebra_amgm_sum1toneqn_prod1tonleq1",
+    "algebra_sum1onsqrt2to1onsqrt10000lt198",
+    "amc12a_2003_p23",
+    "amc12a_2020_p25",
+    "amc12a_2020_p7",
+    "amc12a_2021_p9",
+    "imo_1969_p2",
+    "imo_1974_p3",
+    "imosl_2007_algebra_p6",
+    "induction_pord1p1on2powklt5on2",
+    "induction_prod1p1onk3le3m1onn",
+    "induction_sumkexp3eqsumksq",
+    "mathd_algebra_158",
+    "mathd_algebra_196",
+    "mathd_algebra_215",
+    "mathd_algebra_342",
+    "mathd_numbertheory_127",
+    "mathd_numbertheory_237",
+    "mathd_numbertheory_239",
+    "mathd_numbertheory_3",
+    "mathd_numbertheory_343",
+    "mathd_numbertheory_353",
+    "mathd_numbertheory_427",
+    "mathd_numbertheory_447",
+    "mathd_numbertheory_451",
+    "mathd_numbertheory_552",
+    "mathd_numbertheory_764"
+   ],
+   "attempts_on_unparseable": 2040,
+   "passes_on_unparseable": 0,
+   "contrasts": {
+    "all": {
+     "F_CE-I": [
+      -16.05839416058394,
+      -22.62773722627737,
+      -10.218978102189782
+     ],
+     "F_C-F": [
+      -15.328467153284672,
+      -21.897810218978105,
+      -9.48905109489051
+     ],
+     "F_CE-F_C": [
+      -1.4598540145985401,
+      -5.109489051094891,
+      2.18978102189781
+     ],
+     "F_CE-F_CE_m": [
+      0.0,
+      -3.64963503649635,
+      3.64963503649635
+     ],
+     "F_C_o-F_C": [
+      13.86861313868613,
+      8.02919708029197,
+      20.437956204379564
+     ]
+    },
+    "parseable": {
+     "F_CE-I": [
+      -20.5607476635514,
+      -28.037383177570092,
+      -13.084112149532709
+     ],
+     "F_C-F": [
+      -19.626168224299064,
+      -27.102803738317753,
+      -12.149532710280374
+     ],
+     "F_CE-F_C": [
+      -1.8691588785046727,
+      -6.5420560747663545,
+      2.803738317757009
+     ],
+     "F_CE-F_CE_m": [
+      0.0,
+      -4.672897196261682,
+      4.672897196261682
+     ],
+     "F_C_o-F_C": [
+      17.75700934579439,
+      10.2803738317757,
+      25.233644859813083
+     ]
+    }
+   }
+  }
+ },
+ "same_30_in_both_banks": true,
+ "total_attempts_on_unparseable": 6360,
+ "pooled_correct_minus_shuffled": {
+  "all": {
+   "n": 167,
+   "pooled_difference_pp": 1.7335658353622423,
+   "problem_bootstrap_95_pp": [
+    -2.059625254984537,
+    5.6165772849904565
+   ],
+   "fixed_bank_90_pp": [
+    -0.21125874548737697,
+    3.6783904162118617
+   ]
+  },
+  "parseable": {
+   "n": 137,
+   "pooled_difference_pp": 2.113178792010908,
+   "problem_bootstrap_95_pp": [
+    -2.550743964065133,
+    6.843677308093364
+   ],
+   "fixed_bank_90_pp": [
+    -0.2575197846451976,
+    4.483877368667014
+   ]
+  }
+ },
+ "benefit_bounds": {
+  "all": {
+   "max_individual_upper_pp": 3.592814371257485,
+   "max_family_upper_pp": 5.9880239520958085
+  },
+  "parseable": {
+   "max_individual_upper_pp": 4.37956204379562,
+   "max_family_upper_pp": 7.2992700729927
+  }
+ }
+}

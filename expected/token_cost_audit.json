@@ -1,0 +1,836 @@
+{
+  "tokenizer": "/scratch/anonymous/hf/hub/models--Qwen--Qwen3.6-27B/snapshots/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "caveats": [
+    "API usage was not retained; one-step counts reconstruct visible text and rendered prompts.",
+    "Output retokenization can differ from generated token IDs; invisible stop tokens are omitted.",
+    "Each one-step condition uses all four sampled outputs, without early stopping.",
+    "Reflection is generated once per problem and shared across its four proof samples.",
+    "Sequential output logs retain extracted code only, not complete generated responses.",
+    "Prompt tokens measure input volume, not equivalent compute to output tokens.",
+    "Failure-bank creation, verifier cost, infrastructure retries, and unresolved unlogged requests are excluded.",
+    "No DeepSeek tokenizer count is substituted with Qwen tokenization."
+  ],
+  "one_step": {
+    "F_E": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 672220,
+        "mean": 1006.3173652694611,
+        "median": 189.0,
+        "maximum": 88297
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1655656,
+        "mean": 2478.5269461077846,
+        "median": 1229.5,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "F_C": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 452100,
+        "mean": 676.7964071856287,
+        "median": 461.0,
+        "maximum": 4209
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1548493,
+        "mean": 2318.1032934131736,
+        "median": 939.0,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "F_CE": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 1035116,
+        "mean": 1549.5748502994013,
+        "median": 606.0,
+        "maximum": 88861
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1393694,
+        "mean": 2086.368263473054,
+        "median": 879.5,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "bare": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 73840,
+        "mean": 110.53892215568862,
+        "median": 104.0,
+        "maximum": 311
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 911028,
+        "mean": 1363.814371257485,
+        "median": 382.5,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "F_R": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 227992,
+        "mean": 341.3053892215569,
+        "median": 332.0,
+        "maximum": 600
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1705157,
+        "mean": 2552.630239520958,
+        "median": 1325.5,
+        "maximum": 16384
+      },
+      "missing_outputs": 0,
+      "reflection_prompt_tokens_once_per_problem": {
+        "n": 167,
+        "total": 261284,
+        "mean": 1564.5748502994013,
+        "median": 621,
+        "maximum": 88876
+      },
+      "reflection_output_tokens_once_per_problem": {
+        "n": 167,
+        "total": 33361,
+        "mean": 199.76646706586826,
+        "median": 187,
+        "maximum": 463
+      }
+    },
+    "F": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 89204,
+        "mean": 133.53892215568862,
+        "median": 127.0,
+        "maximum": 334
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1713603,
+        "mean": 2565.2739520958085,
+        "median": 1408.5,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "N": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 89204,
+        "mean": 133.53892215568862,
+        "median": 127.0,
+        "maximum": 334
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1769720,
+        "mean": 2649.2814371257487,
+        "median": 1501.5,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "S": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 89204,
+        "mean": 133.53892215568862,
+        "median": 127.0,
+        "maximum": 334
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1645120,
+        "mean": 2462.754491017964,
+        "median": 1265.5,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "P": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 89204,
+        "mean": 133.53892215568862,
+        "median": 127.0,
+        "maximum": 334
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1760481,
+        "mean": 2635.4505988023952,
+        "median": 1292.0,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "I": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 79852,
+        "mean": 119.53892215568862,
+        "median": 113.0,
+        "maximum": 320
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1654233,
+        "mean": 2476.3967065868264,
+        "median": 1331.5,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "D": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 89204,
+        "mean": 133.53892215568862,
+        "median": 127.0,
+        "maximum": 334
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1885731,
+        "mean": 2822.9505988023952,
+        "median": 1527.5,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "N4": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 89204,
+        "mean": 133.53892215568862,
+        "median": 127.0,
+        "maximum": 334
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1787086,
+        "mean": 2675.2784431137725,
+        "median": 1606.0,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "N5": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 89204,
+        "mean": 133.53892215568862,
+        "median": 127.0,
+        "maximum": 334
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1819215,
+        "mean": 2723.375748502994,
+        "median": 1485.0,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "N3": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 89204,
+        "mean": 133.53892215568862,
+        "median": 127.0,
+        "maximum": 334
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1735883,
+        "mean": 2598.627245508982,
+        "median": 1558.0,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "N2": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 89204,
+        "mean": 133.53892215568862,
+        "median": 127.0,
+        "maximum": 334
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1936187,
+        "mean": 2898.4835329341317,
+        "median": 1670.5,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "N_noI": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out_ext/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 83192,
+        "mean": 124.53892215568862,
+        "median": 118.0,
+        "maximum": 325
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1080738,
+        "mean": 1617.87125748503,
+        "median": 546.0,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "F_E_shuf": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out_ext/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 1055112,
+        "mean": 1579.508982035928,
+        "median": 215.0,
+        "maximum": 88320
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1503984,
+        "mean": 2251.4730538922154,
+        "median": 1169.5,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "F_CE_shuf": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out_ext2/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 1418008,
+        "mean": 2122.7664670658683,
+        "median": 642.0,
+        "maximum": 88667
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1229731,
+        "mean": 1840.9146706586826,
+        "median": 837.0,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "F_E_noI": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out_noi/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 666208,
+        "mean": 997.3173652694611,
+        "median": 180.0,
+        "maximum": 88288
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1367324,
+        "mean": 2046.8922155688622,
+        "median": 996.0,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "F_R_noI": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out_noi/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 221980,
+        "mean": 332.3053892215569,
+        "median": 323.0,
+        "maximum": 591
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1538839,
+        "mean": 2303.6511976047905,
+        "median": 1240.0,
+        "maximum": 16384
+      },
+      "missing_outputs": 0,
+      "reflection_prompt_tokens_once_per_problem": {
+        "n": 167,
+        "total": 261284,
+        "mean": 1564.5748502994013,
+        "median": 621,
+        "maximum": 88876
+      },
+      "reflection_output_tokens_once_per_problem": {
+        "n": 167,
+        "total": 33361,
+        "mean": 199.76646706586826,
+        "median": 187,
+        "maximum": 463
+      }
+    },
+    "F_CE_noI": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out_noi/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 1029104,
+        "mean": 1540.5748502994013,
+        "median": 597.0,
+        "maximum": 88852
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1286292,
+        "mean": 1925.5868263473053,
+        "median": 635.5,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "F_E_shuf_noI": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out_noi/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 1049100,
+        "mean": 1570.508982035928,
+        "median": 206.0,
+        "maximum": 88311
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1358348,
+        "mean": 2033.4550898203593,
+        "median": 913.5,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "F_noI": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out_noi/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 83192,
+        "mean": 124.53892215568862,
+        "median": 118.0,
+        "maximum": 325
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1134472,
+        "mean": 1698.311377245509,
+        "median": 852.5,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    },
+    "F_C_noI": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out_noi/rollouts.jsonl",
+      "rows": 668,
+      "problems": 167,
+      "prompt_tokens": {
+        "n": 668,
+        "total": 446088,
+        "mean": 667.7964071856287,
+        "median": 452.0,
+        "maximum": 4200
+      },
+      "visible_output_tokens": {
+        "n": 668,
+        "total": 1232533,
+        "mean": 1845.1092814371257,
+        "median": 881.5,
+        "maximum": 16384
+      },
+      "missing_outputs": 0
+    }
+  },
+  "sequential": {
+    "depth_assert": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/depth_assert.jsonl",
+      "rows": 3697,
+      "full_output_available": 0,
+      "extracted_code_tokens_NOT_output_cost": {
+        "n": 3697,
+        "total": 5945633,
+        "mean": 1608.2318095753315,
+        "median": 1431,
+        "maximum": 15409
+      },
+      "recorded_prompt_tokens": {
+        "n": 0
+      },
+      "recorded_history_tokens": {
+        "n": 0
+      },
+      "recorded_input_tokens_through_success_or_observed_end": {
+        "n": 0
+      }
+    },
+    "depth_noise": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/depth_noise.jsonl",
+      "rows": 3790,
+      "full_output_available": 0,
+      "extracted_code_tokens_NOT_output_cost": {
+        "n": 3790,
+        "total": 5662704,
+        "mean": 1494.1171503957783,
+        "median": 1332.5,
+        "maximum": 15485
+      },
+      "recorded_prompt_tokens": {
+        "n": 0
+      },
+      "recorded_history_tokens": {
+        "n": 0
+      },
+      "recorded_input_tokens_through_success_or_observed_end": {
+        "n": 0
+      }
+    },
+    "depth_f": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/depth_f.jsonl",
+      "rows": 3853,
+      "full_output_available": 0,
+      "extracted_code_tokens_NOT_output_cost": {
+        "n": 3853,
+        "total": 6222424,
+        "mean": 1614.9556189981831,
+        "median": 1404,
+        "maximum": 15503
+      },
+      "recorded_prompt_tokens": {
+        "n": 0
+      },
+      "recorded_history_tokens": {
+        "n": 0
+      },
+      "recorded_input_tokens_through_success_or_observed_end": {
+        "n": 0
+      }
+    },
+    "depth_blind": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/depth_blind.jsonl",
+      "rows": 7040,
+      "full_output_available": 0,
+      "extracted_code_tokens_NOT_output_cost": {
+        "n": 7040,
+        "total": 3700139,
+        "mean": 525.5879261363636,
+        "median": 396.0,
+        "maximum": 16412
+      },
+      "recorded_prompt_tokens": {
+        "n": 0
+      },
+      "recorded_history_tokens": {
+        "n": 0
+      },
+      "recorded_input_tokens_through_success_or_observed_end": {
+        "n": 0
+      }
+    },
+    "depth_blind_I": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/depth_blind_I.jsonl",
+      "rows": 7040,
+      "full_output_available": 0,
+      "extracted_code_tokens_NOT_output_cost": {
+        "n": 7040,
+        "total": 9921020,
+        "mean": 1409.2357954545455,
+        "median": 1212.0,
+        "maximum": 10005
+      },
+      "recorded_prompt_tokens": {
+        "n": 0
+      },
+      "recorded_history_tokens": {
+        "n": 0
+      },
+      "recorded_input_tokens_through_success_or_observed_end": {
+        "n": 0
+      }
+    },
+    "depth_blind_F": {
+      "source": "/scratch/anonymous/confirm-error-wt/experiments/decomp_rerun/out/depth_blind_F.jsonl",
+      "rows": 7040,
+      "full_output_available": 0,
+      "extracted_code_tokens_NOT_output_cost": {
+        "n": 7040,
+        "total": 4725519,
+        "mean": 671.2384943181818,
+        "median": 498.0,
+        "maximum": 16386
+      },
+      "recorded_prompt_tokens": {
+        "n": 0
+      },
+      "recorded_history_tokens": {
+        "n": 0
+      },
+      "recorded_input_tokens_through_success_or_observed_end": {
+        "n": 0
+      }
+    },
+    "depth_C": {
+      "source": "/scratch/anonymous/depth-ce-wt/experiments/decomp_rerun/out_depth_ce/depth_C.jsonl",
+      "rows": 5070,
+      "full_output_available": 0,
+      "extracted_code_tokens_NOT_output_cost": {
+        "n": 5070,
+        "total": 7856558,
+        "mean": 1549.6169625246548,
+        "median": 1407.0,
+        "maximum": 5604
+      },
+      "recorded_prompt_tokens": {
+        "n": 5070,
+        "total": 29266040,
+        "mean": 5772.394477317554,
+        "median": 6313.0,
+        "maximum": 7188
+      },
+      "recorded_history_tokens": {
+        "n": 5070,
+        "total": 28574252,
+        "mean": 5635.947140039448,
+        "median": 6149.0,
+        "maximum": 7000
+      },
+      "recorded_input_tokens_through_success_or_observed_end": {
+        "n": 110,
+        "total": 29266040,
+        "mean": 266054.9090909091,
+        "median": 358118.5,
+        "maximum": 433508
+      }
+    },
+    "depth_CE": {
+      "source": "/scratch/anonymous/depth-ce-wt/experiments/decomp_rerun/out_depth_ce/depth_CE.jsonl",
+      "rows": 4107,
+      "full_output_available": 0,
+      "extracted_code_tokens_NOT_output_cost": {
+        "n": 4107,
+        "total": 5811099,
+        "mean": 1414.9254930606282,
+        "median": 1314,
+        "maximum": 6197
+      },
+      "recorded_prompt_tokens": {
+        "n": 4107,
+        "total": 23594778,
+        "mean": 5745.015339663988,
+        "median": 6298,
+        "maximum": 7193
+      },
+      "recorded_history_tokens": {
+        "n": 4107,
+        "total": 23028284,
+        "mean": 5607.081568054541,
+        "median": 6161,
+        "maximum": 7000
+      },
+      "recorded_input_tokens_through_success_or_observed_end": {
+        "n": 110,
+        "total": 23594778,
+        "mean": 214497.9818181818,
+        "median": 292249.5,
+        "maximum": 428286
+      }
+    },
+    "depth_CE_shuf": {
+      "source": "/scratch/anonymous/depth-ce-wt/experiments/decomp_rerun/out_depth_ce/depth_CE_shuf.jsonl",
+      "rows": 5353,
+      "full_output_available": 0,
+      "extracted_code_tokens_NOT_output_cost": {
+        "n": 5353,
+        "total": 7498181,
+        "mean": 1400.7436951242294,
+        "median": 1313,
+        "maximum": 6505
+      },
+      "recorded_prompt_tokens": {
+        "n": 5353,
+        "total": 31053863,
+        "mean": 5801.207360358678,
+        "median": 6344,
+        "maximum": 7203
+      },
+      "recorded_history_tokens": {
+        "n": 5353,
+        "total": 30326456,
+        "mean": 5665.3196338501775,
+        "median": 6208,
+        "maximum": 7000
+      },
+      "recorded_input_tokens_through_success_or_observed_end": {
+        "n": 110,
+        "total": 31053863,
+        "mean": 282307.84545454546,
+        "median": 364584.0,
+        "maximum": 429536
+      }
+    }
+  },
+  "deepseek_coverage": {
+    "bare": {
+      "rows": 668,
+      "full_text_available": 0,
+      "api_usage_available": 0,
+      "tokenizer_not_audited": true
+    },
+    "I": {
+      "rows": 548,
+      "full_text_available": 0,
+      "api_usage_available": 0,
+      "tokenizer_not_audited": true
+    },
+    "F": {
+      "rows": 548,
+      "full_text_available": 0,
+      "api_usage_available": 0,
+      "tokenizer_not_audited": true
+    },
+    "F_C": {
+      "rows": 548,
+      "full_text_available": 0,
+      "api_usage_available": 0,
+      "tokenizer_not_audited": true
+    },
+    "F_CE": {
+      "rows": 548,
+      "full_text_available": 0,
+      "api_usage_available": 0,
+      "tokenizer_not_audited": true
+    },
+    "F_E": {
+      "rows": 548,
+      "full_text_available": 0,
+      "api_usage_available": 0,
+      "tokenizer_not_audited": true
+    },
+    "F_E_shuf": {
+      "rows": 548,
+      "full_text_available": 0,
+      "api_usage_available": 0,
+      "tokenizer_not_audited": true
+    },
+    "N": {
+      "rows": 548,
+      "full_text_available": 0,
+      "api_usage_available": 0,
+      "tokenizer_not_audited": true
+    },
+    "F_CE_shuf": {
+      "rows": 548,
+      "full_text_available": 0,
+      "api_usage_available": 0,
+      "tokenizer_not_audited": true
+    },
+    "F_noI": {
+      "rows": 548,
+      "full_text_available": 0,
+      "api_usage_available": 0,
+      "tokenizer_not_audited": true
+    },
+    "F_E_noI": {
+      "rows": 548,
+      "full_text_available": 0,
+      "api_usage_available": 0,
+      "tokenizer_not_audited": true
+    },
+    "F_E_shuf_noI": {
+      "rows": 548,
+      "full_text_available": 0,
+      "api_usage_available": 0,
+      "tokenizer_not_audited": true
+    },
+    "F_C_noI": {
+      "rows": 548,
+      "full_text_available": 0,
+      "api_usage_available": 0,
+      "tokenizer_not_audited": true
+    },
+    "F_CE_noI": {
+      "rows": 548,
+      "full_text_available": 0,
+      "api_usage_available": 0,
+      "tokenizer_not_audited": true
+    }
+  }
+}

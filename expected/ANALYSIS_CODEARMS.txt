@@ -1,0 +1,133 @@
+memoryless_I: 11 problems, 7040 draws, 606 passes, 0 infra-error rows
+
+per problem: draws  passes  rate    pass@k (pooled estimator)  k=1  k=2  k=4  k=8  k=16  k=32  k=64
+  algebra_amgm_sumasqdivbgeqsuma    640   131  0.205   0.205  0.368  0.601  0.842  0.976  0.999  1.000   mean resp tokens 1814
+  amc12_2000_p20                    640     1  0.002   0.002  0.003  0.006  0.012  0.025  0.050  0.100   mean resp tokens 2525
+  amc12a_2009_p7                    640     0  0.000   0.000  0.000  0.000  0.000  0.000  0.000  0.000   mean resp tokens 2704
+  amc12a_2013_p4                    640    76  0.119   0.119  0.224  0.398  0.638  0.871  0.984  1.000   mean resp tokens 420
+  imo_1962_p2                       640    28  0.044   0.044  0.086  0.164  0.302  0.515  0.770  0.951   mean resp tokens 4587
+  imo_1963_p5                       640     1  0.002   0.002  0.003  0.006  0.012  0.025  0.050  0.100   mean resp tokens 3063
+  imo_1983_p6                       640    49  0.077   0.077  0.147  0.273  0.473  0.725  0.927  0.995   mean resp tokens 7125
+  mathd_algebra_276                 640     0  0.000   0.000  0.000  0.000  0.000  0.000  0.000  0.000   mean resp tokens 3521
+  mathd_algebra_332                 640   273  0.427   0.427  0.672  0.893  0.989  1.000  1.000  1.000   mean resp tokens 561
+  mathd_numbertheory_234            640    15  0.023   0.023  0.046  0.091  0.174  0.319  0.541  0.798   mean resp tokens 1376
+  mathd_numbertheory_314            640    32  0.050   0.050  0.098  0.186  0.338  0.564  0.814  0.969   mean resp tokens 1964
+
+memoryless_I mean pass@k over problems:
+  k= 1: 0.086  95% CI [0.026, 0.166]
+  k= 2: 0.150  95% CI [0.049, 0.277]
+  k= 4: 0.238  95% CI [0.091, 0.413]
+  k= 8: 0.344  95% CI [0.159, 0.549]
+  k=16: 0.456  95% CI [0.231, 0.689]
+  k=32: 0.558  95% CI [0.298, 0.798]
+  k=64: 0.628  95% CI [0.367, 0.883]
+
+=== C (repair, 110 trajectories) minus memoryless_I, paired problem bootstrap (n=11 problems)
+   k   repair   memI    delta_k   95% CI
+    1   0.027   0.086     -5.9pp  [ -11.2,   -1.3]  
+    2   0.073   0.150     -7.7pp  [ -18.6,   +1.6]  
+    4   0.109   0.238    -12.9pp  [ -29.9,   +2.5]  
+    8   0.136   0.344    -20.7pp  [ -41.1,   -2.8]  
+   16   0.155   0.456    -30.2pp  [ -50.2,  -10.5]  
+   32   0.182   0.558    -37.6pp  [ -58.6,  -16.0]  
+   64   0.227   0.628    -40.1pp  [ -62.2,  -17.0]  repair underperforms retrying
+   conditional on attempt 1 failing (repair: trajectories with a failed attempt 1; memI: pooled estimator over k-1 draws)
+     k= 2: delta   -4.0pp  [ -13.6,   +4.2]  (n=11)
+     k= 4: delta  -11.5pp  [ -29.8,   +3.8]  (n=11)
+     k= 8: delta  -21.1pp  [ -43.2,   -2.3]  (n=11)
+     k=16: delta  -31.4pp  [ -52.2,  -11.6]  (n=11)
+     k=32: delta  -39.3pp  [ -60.8,  -16.5]  (n=11)
+     k=64: delta  -41.4pp  [ -63.3,  -18.7]  (n=11)
+
+=== CE (repair, 110 trajectories) minus memoryless_I, paired problem bootstrap (n=11 problems)
+   k   repair   memI    delta_k   95% CI
+    1   0.036   0.086     -5.0pp  [  -9.4,   -0.5]  
+    2   0.100   0.150     -5.0pp  [ -11.8,   +1.3]  
+    4   0.255   0.238     +1.7pp  [ -10.3,  +13.5]  
+    8   0.318   0.344     -2.6pp  [ -17.7,  +12.3]  
+   16   0.364   0.456     -9.3pp  [ -26.0,   +7.1]  
+   32   0.400   0.558    -15.8pp  [ -36.2,   +5.0]  
+   64   0.445   0.628    -18.3pp  [ -41.8,   +5.3]  no advantage established  <- PRIMARY
+   conditional on attempt 1 failing (repair: trajectories with a failed attempt 1; memI: pooled estimator over k-1 draws)
+     k= 2: delta   -1.9pp  [  -8.7,   +4.0]  (n=11)
+     k= 4: delta   +4.3pp  [  -5.7,  +15.1]  (n=11)
+     k= 8: delta   -1.3pp  [ -15.4,  +13.0]  (n=11)
+     k=16: delta   -9.1pp  [ -25.0,   +7.0]  (n=11)
+     k=32: delta  -16.3pp  [ -36.3,   +4.7]  (n=11)
+     k=64: delta  -19.1pp  [ -42.3,   +4.5]  (n=11)
+
+=== CE_s (repair, 110 trajectories) minus memoryless_I, paired problem bootstrap (n=11 problems)
+   k   repair   memI    delta_k   95% CI
+    1   0.018   0.086     -6.8pp  [ -11.7,   -2.5]  
+    2   0.082   0.150     -6.8pp  [ -13.3,   -0.7]  
+    4   0.155   0.238     -8.3pp  [ -21.7,   +4.3]  
+    8   0.164   0.344    -18.0pp  [ -34.4,   -2.0]  
+   16   0.200   0.456    -25.6pp  [ -43.4,   -7.4]  
+   32   0.218   0.558    -34.0pp  [ -53.9,  -12.9]  
+   64   0.264   0.628    -36.5pp  [ -58.4,  -12.7]  repair underperforms retrying
+   conditional on attempt 1 failing (repair: trajectories with a failed attempt 1; memI: pooled estimator over k-1 draws)
+     k= 2: delta   -1.8pp  [  -6.2,   +2.3]  (n=11)
+     k= 4: delta   -5.8pp  [ -19.6,   +6.7]  (n=11)
+     k= 8: delta  -17.2pp  [ -34.7,   -1.1]  (n=11)
+     k=16: delta  -25.7pp  [ -44.2,   -6.6]  (n=11)
+     k=32: delta  -34.5pp  [ -54.3,  -13.3]  (n=11)
+     k=64: delta  -37.3pp  [ -59.2,  -14.4]  (n=11)
+
+=== blind_I (repair, 110 trajectories) minus memoryless_I, paired problem bootstrap (n=11 problems)
+   k   repair   memI    delta_k   95% CI
+    1   0.082   0.086     -0.4pp  [  -4.7,   +4.8]  
+    2   0.136   0.150     -1.3pp  [  -6.6,   +4.9]  
+    4   0.255   0.238     +1.7pp  [  -4.3,   +7.6]  
+    8   0.400   0.344     +5.6pp  [  -0.5,  +12.5]  
+   16   0.482   0.456     +2.5pp  [  -3.1,   +7.9]  
+   32   0.609   0.558     +5.1pp  [  -0.8,  +11.3]  
+   64   0.682   0.628     +5.3pp  [  -1.0,  +12.4]  no advantage established
+   conditional on attempt 1 failing (repair: trajectories with a failed attempt 1; memI: pooled estimator over k-1 draws)
+     k= 2: delta   -1.3pp  [  -7.2,   +3.6]  (n=11)
+     k= 4: delta   +2.3pp  [  -4.2,   +8.7]  (n=11)
+     k= 8: delta   +7.1pp  [  +1.3,  +13.8]  (n=11)
+     k=16: delta   +3.1pp  [  -2.2,   +8.0]  (n=11)
+     k=32: delta   +5.3pp  [  -0.5,  +11.3]  (n=11)
+     k=64: delta   +5.4pp  [  -0.9,  +12.6]  (n=11)
+
+=== f (repair, 110 trajectories) minus memoryless_I, paired problem bootstrap (n=11 problems)
+   k   repair   memI    delta_k   95% CI
+    1   0.009   0.086     -7.7pp  [ -14.0,   -2.5]  
+    2   0.036   0.150    -11.3pp  [ -20.6,   -2.9]  
+    4   0.127   0.238    -11.1pp  [ -20.8,   -2.1]  
+    8   0.218   0.344    -12.6pp  [ -23.8,   -2.4]  
+   16   0.364   0.456     -9.3pp  [ -23.7,   +3.3]  
+   32   0.545   0.558     -1.2pp  [ -15.5,  +13.1]  
+   64   0.636   0.628     +0.8pp  [ -13.2,  +16.4]  no advantage established
+   conditional on attempt 1 failing (repair: trajectories with a failed attempt 1; memI: pooled estimator over k-1 draws)
+     k= 2: delta   -5.8pp  [ -12.2,   -0.4]  (n=11)
+     k= 4: delta   -7.7pp  [ -17.5,   -0.1]  (n=11)
+     k= 8: delta  -10.9pp  [ -22.4,   -0.9]  (n=11)
+     k=16: delta   -8.4pp  [ -22.6,   +4.1]  (n=11)
+     k=32: delta   -0.9pp  [ -14.7,  +13.5]  (n=11)
+     k=64: delta   +0.9pp  [ -13.2,  +16.5]  (n=11)
+
+=== repair-arm pairwise contrasts at k=64 (secondary; paired problem bootstrap)
+  C - CE:  -21.8pp  [ -32.7,  -10.9]  (n=11)
+  C - CE_s:   -3.6pp  [ -14.5,   +7.3]  (n=11)
+  C - blind_I:  -45.5pp  [ -66.4,  -25.5]  (n=11)
+  C - f:  -40.9pp  [ -54.5,  -26.4]  (n=11)
+  CE - CE_s:  +18.2pp  [  +8.2,  +28.2]  (n=11)
+  CE - blind_I:  -23.6pp  [ -47.3,   -0.0]  (n=11)
+  CE - f:  -19.1pp  [ -31.8,   -5.5]  (n=11)
+  CE_s - blind_I:  -41.8pp  [ -60.9,  -20.9]  (n=11)
+  CE_s - f:  -37.3pp  [ -50.0,  -25.5]  (n=11)
+  blind_I - f:   +4.5pp  [ -10.9,  +19.1]  (n=11)
+
+per-problem heterogeneity at k=64 (repair solved-fraction | memI pooled pass@64):
+  algebra_amgm_sumasqdivbgeqsuma   C=0.20  CE=0.60  CE_s=0.30  blind_I=1.00  f=1.00  | memI=1.00
+  amc12_2000_p20                   C=0.20  CE=0.10  CE_s=0.00  blind_I=0.30  f=0.20  | memI=0.10
+  amc12a_2009_p7                   C=0.10  CE=0.50  CE_s=0.40  blind_I=0.10  f=0.60  | memI=0.00
+  amc12a_2013_p4                   C=0.30  CE=0.60  CE_s=0.60  blind_I=1.00  f=1.00  | memI=1.00
+  imo_1962_p2                      C=0.30  CE=0.70  CE_s=0.50  blind_I=1.00  f=0.70  | memI=0.95
+  imo_1963_p5                      C=0.00  CE=0.40  CE_s=0.00  blind_I=0.00  f=0.20  | memI=0.10
+  imo_1983_p6                      C=0.50  CE=0.60  CE_s=0.20  blind_I=0.90  f=1.00  | memI=1.00
+  mathd_algebra_276                C=0.10  CE=0.20  CE_s=0.10  blind_I=0.30  f=0.20  | memI=0.00
+  mathd_algebra_332                C=0.70  CE=1.00  CE_s=0.60  blind_I=1.00  f=1.00  | memI=1.00
+  mathd_numbertheory_234           C=0.10  CE=0.00  CE_s=0.10  blind_I=0.90  f=0.50  | memI=0.80
+  mathd_numbertheory_314           C=0.00  CE=0.20  CE_s=0.10  blind_I=1.00  f=0.60  | memI=0.97

@@ -1,0 +1,262 @@
+{
+ "rule": "predecessor/sample proof body (after first `:=`, comments removed) contains whole-word `begin`; sequential Lean 3 error = diagnostic containing \"Unknown identifier `begin`\"; sequential subset = attempt 1 failed and attempt-1 code not Lean 3",
+ "bootstrap": "paired problem bootstrap within subset, B=10000, fresh random.Random(0) per contrast/subset, sorted endpoints",
+ "onestep": {
+  "n_problems": 167,
+  "lean3_predecessors": 50,
+  "lean3_problem_ids": [
+   "aime_1983_p1",
+   "aime_1990_p4",
+   "aime_1991_p9",
+   "aime_1997_p9",
+   "algebra_2varlineareq_fp3zeq11_3tfm1m5zeqn68_feqn10_zeq7",
+   "algebra_9onxpypzleqsum2onxpy",
+   "algebra_abpbcpcageq3_sumaonsqrtapbgeq3onsqrt2",
+   "algebra_bleqa_apbon2msqrtableqambsqon8b",
+   "algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778",
+   "amc12a_2002_p13",
+   "amc12a_2020_p7",
+   "amc12b_2021_p4",
+   "imo_1977_p6",
+   "induction_1pxpownlt1pnx",
+   "induction_pord1p1on2powklt5on2",
+   "mathd_algebra_114",
+   "mathd_algebra_125",
+   "mathd_algebra_137",
+   "mathd_algebra_141",
+   "mathd_algebra_142",
+   "mathd_algebra_143",
+   "mathd_algebra_160",
+   "mathd_algebra_171",
+   "mathd_algebra_208",
+   "mathd_algebra_246",
+   "mathd_algebra_263",
+   "mathd_algebra_270",
+   "mathd_algebra_313",
+   "mathd_algebra_314",
+   "mathd_algebra_329",
+   "mathd_algebra_33",
+   "mathd_algebra_338",
+   "mathd_algebra_354",
+   "mathd_algebra_388",
+   "mathd_algebra_412",
+   "mathd_algebra_419",
+   "mathd_algebra_427",
+   "mathd_algebra_44",
+   "mathd_algebra_440",
+   "mathd_algebra_441",
+   "mathd_algebra_478",
+   "mathd_algebra_80",
+   "mathd_numbertheory_12",
+   "mathd_numbertheory_185",
+   "mathd_numbertheory_227",
+   "mathd_numbertheory_233",
+   "mathd_numbertheory_314",
+   "mathd_numbertheory_328",
+   "mathd_numbertheory_582",
+   "numbertheory_aoddbdiv4asqpbsqmod8eq1"
+  ],
+  "lean3_with_begin_unknown_identifier": 48,
+  "lean3_without_begin_diagnostic": {
+   "amc12a_2020_p7": "unexpected token 'in'; expected ','; Invalid `end`: There is no current scope to end\n\nNote: Scopes are introduced using `namespace` and `section`",
+   "induction_pord1p1on2powklt5on2": "unexpected token 'in'; expected ','; Invalid `end`: There is no current scope to end\n\nNote: Scopes are introduced using `namespace` and `section`; unexpected to"
+  },
+  "identifier_subset": 68,
+  "begin_in_identifier_subset": 48,
+  "I_solves": {
+   "lean3": 31,
+   "other": 14
+  },
+  "tab_lean3": {
+   "F_C-F": {
+    "lean3": {
+     "difference_pp": -26.0,
+     "ci95_pp": [
+      -40.0,
+      -12.0
+     ],
+     "solved_subtracted": 21,
+     "solved_first": 8
+    },
+    "other": {
+     "difference_pp": -1.7,
+     "ci95_pp": [
+      -8.5,
+      5.1
+     ],
+     "solved_subtracted": 12,
+     "solved_first": 10
+    }
+   },
+   "F_CE-F_C": {
+    "lean3": {
+     "difference_pp": 34.0,
+     "ci95_pp": [
+      20.0,
+      48.0
+     ],
+     "solved_subtracted": 8,
+     "solved_first": 25
+    },
+    "other": {
+     "difference_pp": 4.3,
+     "ci95_pp": [
+      -0.9,
+      9.4
+     ],
+     "solved_subtracted": 10,
+     "solved_first": 15
+    }
+   },
+   "F_CE-F_CE_match": {
+    "lean3": {
+     "difference_pp": 20.0,
+     "ci95_pp": [
+      6.0,
+      34.0
+     ],
+     "solved_subtracted": 15,
+     "solved_first": 25
+    },
+    "other": {
+     "difference_pp": 2.6,
+     "ci95_pp": [
+      -3.4,
+      8.5
+     ],
+     "solved_subtracted": 12,
+     "solved_first": 15
+    }
+   },
+   "F_C_other-F_C": {
+    "lean3": {
+     "difference_pp": 42.0,
+     "ci95_pp": [
+      26.0,
+      58.0
+     ],
+     "solved_subtracted": 8,
+     "solved_first": 29
+    },
+    "other": {
+     "difference_pp": 2.6,
+     "ci95_pp": [
+      -3.4,
+      8.5
+     ],
+     "solved_subtracted": 10,
+     "solved_first": 13
+    }
+   },
+   "F_CE-I": {
+    "lean3": {
+     "difference_pp": -12.0,
+     "ci95_pp": [
+      -26.0,
+      0.0
+     ],
+     "solved_subtracted": 31,
+     "solved_first": 25
+    },
+    "other": {
+     "difference_pp": 0.9,
+     "ci95_pp": [
+      -4.3,
+      6.0
+     ],
+     "solved_subtracted": 14,
+     "solved_first": 15
+    }
+   }
+  },
+  "samples_containing_begin_on_lean3": {
+   "F": {
+    "count": 65,
+    "samples": 200,
+    "percent": 32.5
+   },
+   "F_C": {
+    "count": 147,
+    "samples": 200,
+    "percent": 73.5
+   },
+   "F_CE": {
+    "count": 64,
+    "samples": 200,
+    "percent": 32.0
+   },
+   "I": {
+    "count": 27,
+    "samples": 200,
+    "percent": 13.5
+   }
+  },
+  "F_C_exact_copy": {
+   "lean3": {
+    "count": 37,
+    "samples": 200,
+    "percent": 18.5
+   },
+   "other": {
+    "count": 74,
+    "samples": 468,
+    "percent": 15.8
+   }
+  }
+ },
+ "sequential": {
+  "failed_attempts_with_lean3_error": {
+   "C": {
+    "count": 38,
+    "failed": 5818,
+    "percent": 0.65
+   },
+   "CE": {
+    "count": 39,
+    "failed": 4361,
+    "percent": 0.89
+   },
+   "CE_s": {
+    "count": 32,
+    "failed": 5518,
+    "percent": 0.58
+   },
+   "CE_m": {
+    "count": 41,
+    "failed": 5842,
+    "percent": 0.7
+   },
+   "pooled": {
+    "count": 150,
+    "failed": 21539,
+    "percent": 0.7
+   }
+  },
+  "solved_given_attempt1_not_lean3": {
+   "C": {
+    "solved": 16,
+    "trajectories": 78,
+    "of_total": 110,
+    "percent": 20.5
+   },
+   "CE": {
+    "solved": 36,
+    "trajectories": 81,
+    "of_total": 110,
+    "percent": 44.4
+   },
+   "CE_s": {
+    "solved": 24,
+    "trajectories": 82,
+    "of_total": 110,
+    "percent": 29.3
+   },
+   "CE_m": {
+    "solved": 17,
+    "trajectories": 83,
+    "of_total": 110,
+    "percent": 20.5
+   }
+  }
+ }
+}

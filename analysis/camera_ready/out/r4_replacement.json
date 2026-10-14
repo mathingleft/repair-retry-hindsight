@@ -1,0 +1,118 @@
+{
+ "qwen": {
+  "n": 167,
+  "donor_rule": "seeded cross-problem draw, random.Random(22072605); the same partner F_E_shuf/F_CE_shuf use",
+  "donors_from_analysed_bank": 161,
+  "donors_that_are_framing_holdouts": 6,
+  "same_error_class": 40,
+  "replacement_over_own_char_ratio": {
+   "min": 0.01790817298533054,
+   "p25": 0.48896223667318317,
+   "median": 1.1183673469387756,
+   "p75": 2.2994771241830065,
+   "max": 21.73431734317343
+  },
+  "own_predecessor_chars": {
+   "median": 640.0,
+   "p25": 347.0,
+   "p75": 1386.5
+  },
+  "replacement_predecessor_chars": {
+   "median": 778.0,
+   "p25": 382.0,
+   "p75": 1529.0
+  },
+  "F_C_other_minus_F_C": {
+   "all": {
+    "n": 167,
+    "difference_pp": 14.37125748502994,
+    "ci95_pp": [
+     7.784431137724551,
+     21.55688622754491
+    ]
+   },
+   "same_error_class": {
+    "n": 40,
+    "difference_pp": 20.0,
+    "ci95_pp": [
+     5.0,
+     35.0
+    ]
+   },
+   "length_matched_0.8_1.25": {
+    "n": 23,
+    "difference_pp": 13.043478260869565,
+    "ci95_pp": [
+     -8.695652173913043,
+     34.78260869565217
+    ]
+   },
+   "same_class_and_length_matched": {
+    "n": 7,
+    "difference_pp": 14.285714285714285,
+    "ci95_pp": [
+     -28.57142857142857,
+     57.14285714285714
+    ]
+   }
+  }
+ },
+ "deepseek": {
+  "n": 137,
+  "donor_rule": "seeded cross-problem draw, random.Random(22072605); the same partner F_E_shuf/F_CE_shuf use",
+  "donors_from_analysed_bank": 137,
+  "donors_that_are_framing_holdouts": 0,
+  "same_error_class": 6,
+  "replacement_over_own_char_ratio": {
+   "min": 0.10659186535764376,
+   "p25": 0.6232876712328768,
+   "median": 1.055005500550055,
+   "p75": 1.7604306864064603,
+   "max": 6.787234042553192
+  },
+  "own_predecessor_chars": {
+   "median": 821.0,
+   "p25": 586.0,
+   "p75": 1392.0
+  },
+  "replacement_predecessor_chars": {
+   "median": 877.0,
+   "p25": 668.0,
+   "p75": 1432.0
+  },
+  "F_C_other_minus_F_C": {
+   "all": {
+    "n": 137,
+    "difference_pp": 13.86861313868613,
+    "ci95_pp": [
+     8.02919708029197,
+     20.437956204379564
+    ]
+   },
+   "same_error_class": {
+    "n": 6,
+    "difference_pp": 16.666666666666664,
+    "ci95_pp": [
+     0.0,
+     50.0
+    ]
+   },
+   "length_matched_0.8_1.25": {
+    "n": 35,
+    "difference_pp": 11.428571428571429,
+    "ci95_pp": [
+     2.857142857142857,
+     22.857142857142858
+    ]
+   },
+   "same_class_and_length_matched": {
+    "n": 1,
+    "difference_pp": 0.0,
+    "ci95_pp": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ }
+}

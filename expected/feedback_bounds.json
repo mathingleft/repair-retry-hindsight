@@ -1,0 +1,187 @@
+{
+  "seed": 20260905,
+  "resamples": 100000,
+  "family_size": 16,
+  "method": "paired problem percentile bootstrap; Bonferroni one-sided family bounds",
+  "scope": "one-step pass@4 versus I; exploratory approximate coverage",
+  "max_individual_upper_pp": 3.592814371257485,
+  "max_family_upper_pp": 5.9880239520958085,
+  "contrasts": [
+    {
+      "model": "Qwen3.6-27B",
+      "arm": "F_E",
+      "n": 167,
+      "difference_pp": -2.3952095808383236,
+      "individual_95_ci_pp": [
+        -8.383233532934131,
+        3.592814371257485
+      ],
+      "family_95_upper_pp": 5.9880239520958085
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "arm": "F_E_shuf",
+      "n": 167,
+      "difference_pp": -3.592814371257485,
+      "individual_95_ci_pp": [
+        -8.982035928143713,
+        1.7964071856287425
+      ],
+      "family_95_upper_pp": 3.592814371257485
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "arm": "F_CE",
+      "n": 167,
+      "difference_pp": -2.9940119760479043,
+      "individual_95_ci_pp": [
+        -8.383233532934131,
+        2.3952095808383236
+      ],
+      "family_95_upper_pp": 4.790419161676647
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "arm": "F_CE_shuf",
+      "n": 167,
+      "difference_pp": -11.377245508982035,
+      "individual_95_ci_pp": [
+        -17.964071856287426,
+        -4.790419161676647
+      ],
+      "family_95_upper_pp": -2.3952095808383236
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "arm": "F_E_noI",
+      "n": 167,
+      "difference_pp": -7.784431137724551,
+      "individual_95_ci_pp": [
+        -13.17365269461078,
+        -2.3952095808383236
+      ],
+      "family_95_upper_pp": 0.0
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "arm": "F_E_shuf_noI",
+      "n": 167,
+      "difference_pp": -9.580838323353294,
+      "individual_95_ci_pp": [
+        -15.568862275449103,
+        -3.592814371257485
+      ],
+      "family_95_upper_pp": -1.1976047904191618
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "arm": "F_CE_noI",
+      "n": 167,
+      "difference_pp": -10.179640718562874,
+      "individual_95_ci_pp": [
+        -17.365269461077844,
+        -2.9940119760479043
+      ],
+      "family_95_upper_pp": 0.0
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "arm": "F_R",
+      "n": 167,
+      "difference_pp": -1.7964071856287425,
+      "individual_95_ci_pp": [
+        -6.58682634730539,
+        2.9940119760479043
+      ],
+      "family_95_upper_pp": 4.790419161676647
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "arm": "F_R_noI",
+      "n": 167,
+      "difference_pp": -2.3952095808383236,
+      "individual_95_ci_pp": [
+        -7.784431137724551,
+        2.9940119760479043
+      ],
+      "family_95_upper_pp": 4.790419161676647
+    },
+    {
+      "model": "DeepSeek-Prover-V2-7B",
+      "arm": "F_E",
+      "n": 137,
+      "difference_pp": -2.9197080291970803,
+      "individual_95_ci_pp": [
+        -7.2992700729927,
+        0.7299270072992701
+      ],
+      "family_95_upper_pp": 2.18978102189781
+    },
+    {
+      "model": "DeepSeek-Prover-V2-7B",
+      "arm": "F_E_shuf",
+      "n": 137,
+      "difference_pp": -1.4598540145985401,
+      "individual_95_ci_pp": [
+        -5.109489051094891,
+        2.18978102189781
+      ],
+      "family_95_upper_pp": 3.64963503649635
+    },
+    {
+      "model": "DeepSeek-Prover-V2-7B",
+      "arm": "F_CE",
+      "n": 137,
+      "difference_pp": -16.05839416058394,
+      "individual_95_ci_pp": [
+        -22.62773722627737,
+        -10.218978102189782
+      ],
+      "family_95_upper_pp": -8.02919708029197
+    },
+    {
+      "model": "DeepSeek-Prover-V2-7B",
+      "arm": "F_CE_shuf",
+      "n": 137,
+      "difference_pp": -13.138686131386862,
+      "individual_95_ci_pp": [
+        -18.97810218978102,
+        -8.02919708029197
+      ],
+      "family_95_upper_pp": -5.839416058394161
+    },
+    {
+      "model": "DeepSeek-Prover-V2-7B",
+      "arm": "F_E_noI",
+      "n": 137,
+      "difference_pp": -1.4598540145985401,
+      "individual_95_ci_pp": [
+        -5.109489051094891,
+        2.18978102189781
+      ],
+      "family_95_upper_pp": 3.64963503649635
+    },
+    {
+      "model": "DeepSeek-Prover-V2-7B",
+      "arm": "F_E_shuf_noI",
+      "n": 137,
+      "difference_pp": -1.4598540145985401,
+      "individual_95_ci_pp": [
+        -5.839416058394161,
+        2.18978102189781
+      ],
+      "family_95_upper_pp": 4.37956204379562
+    },
+    {
+      "model": "DeepSeek-Prover-V2-7B",
+      "arm": "F_CE_noI",
+      "n": 137,
+      "difference_pp": -16.78832116788321,
+      "individual_95_ci_pp": [
+        -23.357664233576642,
+        -10.948905109489052
+      ],
+      "family_95_upper_pp": -8.75912408759124
+    }
+  ]
+}

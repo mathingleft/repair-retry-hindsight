@@ -1,0 +1,38 @@
+{
+  "n_problems": 167,
+  "n_draws_per_cell": 16,
+  "target_k": 4,
+  "pooled_success_percent": {
+    "F_E": 22.526156478252283,
+    "F_E_shuf": 20.792590642890044
+  },
+  "pooled_difference_pp": 1.7335658353622423,
+  "problem_bootstrap_95_pp": [
+    -2.059625254984537,
+    5.6165772849904565
+  ],
+  "problem_bootstrap_90_pp": [
+    -1.472988089754557,
+    4.969072843324339
+  ],
+  "fixed_bank_independent_sampling_normal_intervals_pp": {
+    "0.9": [
+      -0.21125874548737697,
+      3.6783904162118617
+    ],
+    "0.95": [
+      -0.5838355870233615,
+      4.050967257747846
+    ]
+  },
+  "fixed_bank_standard_error_pp": 1.1823693907974693,
+  "original_block_difference_pp": 1.6467065868263473,
+  "bootstrap_seed": 20260906,
+  "bootstrap_resamples": 100000,
+  "caveats": [
+    "post hoc pooled estimator; iid within each problem/condition assumed",
+    "fixed-bank normal CI additionally assumes independent arms/problems; ignores shared batch shocks",
+    "problem bootstrap is a different uncertainty target from fixed-bank intervals",
+    "two unresolved infrastructure rows remain unsuccessful, matching source analysis"
+  ]
+}

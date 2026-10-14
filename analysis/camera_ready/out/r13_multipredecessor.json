@@ -1,0 +1,82 @@
+{
+ "qwen": {
+  "problems": 11,
+  "predecessors_C": 107,
+  "predecessors_E": 109,
+  "per_problem_C_percent": [
+   10.0,
+   0.0,
+   0.0,
+   0.0,
+   11.1,
+   0.0,
+   30.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "per_problem_E_percent": [
+   10.0,
+   10.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   11.1,
+   0.0,
+   0.0
+  ],
+  "C_mean_percent": 4.646464646464646,
+  "E_mean_percent": 2.8282828282828283,
+  "C_minus_E_pp": 1.8181818181818183,
+  "ci95_pp": [
+   -5.05050505050505,
+   10.202020202020202
+  ],
+  "problems_with_negative_sign": 2,
+  "problems_with_zero": 7
+ },
+ "deepseek": {
+  "problems": 11,
+  "predecessors_C": 103,
+  "predecessors_E": 101,
+  "per_problem_C_percent": [
+   10.0,
+   10.0,
+   0.0,
+   10.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "per_problem_E_percent": [
+   0.0,
+   10.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   22.2,
+   0.0
+  ],
+  "C_mean_percent": 2.727272727272728,
+  "E_mean_percent": 2.929292929292929,
+  "C_minus_E_pp": -0.2020202020202018,
+  "ci95_pp": [
+   -7.17171717171717,
+   5.454545454545456
+  ],
+  "problems_with_negative_sign": 1,
+  "problems_with_zero": 8
+ }
+}

@@ -1,0 +1,34 @@
+{
+  "projection": "For each attempt after the first, retain the recipient problem, trajectory and attempt; the complete last shuf_sources entry; source and preceding-own diagnostic hashes; and direct cross-problem, diagnostic-identity and prompt-inclusion checks.",
+  "exports": [
+    {
+      "arm": "E_s",
+      "model": "qwen",
+      "source": "experiments/decomp_rerun/out_codearms/E_s_rows.jsonl.gz",
+      "source_sha256": "84c67236321df62194904095ad1ef1966aa7583e54ce56bb15860783b78e880d",
+      "source_rows": 4165,
+      "donor_rows": 4055,
+      "full_compact_proof_diagnostic_verdict_identity_verified": true
+    },
+    {
+      "arm": "CE_m",
+      "model": "qwen",
+      "source_commit": "c2c361656670037d0d8ebb45ce08bfd489e5500a",
+      "source": "experiments/decomp_rerun/out_codearms/CE_m_rows.jsonl.gz",
+      "source_sha256": "08d72427569e09f769aeedcf18d7759616fafae81e3ffc6e9fd121f88564802a",
+      "source_rows": 5865,
+      "donor_rows": 5755,
+      "full_compact_proof_diagnostic_verdict_identity_verified": true
+    },
+    {
+      "arm": "CE_m",
+      "model": "deepseek",
+      "source_commit": "c2c361656670037d0d8ebb45ce08bfd489e5500a",
+      "source": "experiments/decomp_rerun/out_dsp_codearms/CE_m_rows.jsonl.gz",
+      "source_sha256": "e3ab96e54967d4baa942703fe12b9daf1379fae2996ff2536f3775d859b9cc04",
+      "source_rows": 5903,
+      "donor_rows": 5793,
+      "full_compact_proof_diagnostic_verdict_identity_verified": true
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+Preregistered interaction analysis with the code-free wrong-diagnostic sequential arm E_s (results/PREREG_E_s_seq_2026-09-08.md)
+Run: job 1713705 (decomp-depth-Es-g2, gpu-node-04, gpu:2 TP2, 2026-09-08 19:39 -> 2026-09-09 03:10 PT, 7h32, exit 0); continuation
+1713706 (afternotok) cancelled unused. Qwen3.6-27B bf16 / vLLM 0.28.0 / kimina Lean v4.29.0, ports 8024/8004, no Errno 98.
+Rows: out_codearms/E_s_rows.jsonl (4,165 attempts; gz in repo), depth mirror out/depth_E_s.jsonl (4,165 rows).
+110 trajectories (11 problems x 10), attempt 1..64, early stop at first PASS. 63 trajectories solved by k=64.
+gen_status ok 4165/4165; finish_reason length 6; infrastructure_status non-ok 1 row (verifier REPL crash after retries,
+counted as FAIL, not dropped). Byte-identical repeat of an earlier proof in the trajectory: 17/4055 = 0.4% (f 0.0%, noise 0.5%).
+
+Match quality (shuf_sources, one record per own failed attempt, 4,055 draws): same coarse class 4,004 (98.7%);
+pool fallback to tactic_pool 51; src_tok/own_tok median 1.00, IQR [1.00, 1.00], 96.6% within [0.8, 1.25].
+Pools: syntax 1487, no_goals 468, other 456, linarith 408, rewrite 389, unknown 283, unsolved 239, type 208, simp 47,
+omega 19, tactic_pool 51.
+
+=== PRIMARY: python depth/analyze_interaction.py out   (--nocode E_s, default)
+CE      110 trajectories,  49 solved by 64
+CE_s    110 trajectories,  29 solved by 64
+f       110 trajectories,  70 solved by 64
+E_s     110 trajectories,  63 solved by 64
+
+Delta_interaction(k) = (CE - CE_s) - (f - E_s); paired problem bootstrap, n=11 problems, 10000 resamples, seed 0
+
+   k   CE     CE_s   f      E_s    | CE-CE_s  95% CI            | f-E_s    95% CI            | INTERACTION  95% CI            sign(+/-) p
+    1  0.036  0.018  0.009  0.045  |   +1.8pp [  +0.0,  +4.5] |   -3.6pp [  -8.2,  +0.0] |    +5.5pp [  +0.0, +11.8]  3/0 p=0.250
+    2  0.100  0.082  0.036  0.091  |   +1.8pp [  -1.8,  +5.5] |   -5.5pp [ -10.0,  -0.9] |    +7.3pp [  +0.9, +13.6]  5/1 p=0.219
+    4  0.255  0.155  0.127  0.182  |  +10.0pp [  +3.6, +19.1] |   -5.5pp [ -12.7,  +0.0] |   +15.5pp [  +6.4, +27.3]  7/0 p=0.016
+    8  0.318  0.164  0.218  0.245  |  +15.5pp [  +7.3, +25.5] |   -2.7pp [  -9.1,  +3.6] |   +18.2pp [  +6.4, +32.7]  7/0 p=0.016
+   16  0.364  0.200  0.364  0.336  |  +16.4pp [ +10.0, +24.5] |   +2.7pp [  -7.3, +11.8] |   +13.6pp [  +2.7, +26.4]  7/3 p=0.344
+   32  0.400  0.218  0.545  0.464  |  +18.2pp [ +10.9, +26.4] |   +8.2pp [  -3.6, +19.1] |   +10.0pp [  -5.5, +24.5]  7/3 p=0.344
+   64  0.445  0.264  0.636  0.573  |  +18.2pp [  +8.2, +28.2] |   +6.4pp [  -6.4, +19.1] |   +11.8pp [  -8.2, +29.1]  7/3 p=0.344  <- HEADLINE
+
+per-problem at k=64 (CE, CE_s, f, E_s | CE-CE_s | f-E_s | interaction):
+  algebra_amgm_sumasqdivbgeqsuma   0.60 0.30 1.00 1.00 | +0.30 | +0.00 | +0.30
+  amc12_2000_p20                   0.10 0.00 0.20 0.60 | +0.10 | -0.40 | +0.50
+  amc12a_2009_p7                   0.50 0.40 0.60 0.40 | +0.10 | +0.20 | -0.10
+  amc12a_2013_p4                   0.60 0.60 1.00 0.80 | +0.00 | +0.20 | -0.20
+  imo_1962_p2                      0.70 0.50 0.70 0.80 | +0.20 | -0.10 | +0.30
+  imo_1963_p5                      0.40 0.00 0.20 0.00 | +0.40 | +0.20 | +0.20
+  imo_1983_p6                      0.60 0.20 1.00 1.00 | +0.40 | +0.00 | +0.40
+  mathd_algebra_276                0.20 0.10 0.20 0.10 | +0.10 | +0.10 | +0.00
+  mathd_algebra_332                1.00 0.60 1.00 1.00 | +0.40 | +0.00 | +0.40
+  mathd_numbertheory_234           0.00 0.10 0.50 0.00 | -0.10 | +0.50 | -0.60
+  mathd_numbertheory_314           0.20 0.10 0.60 0.60 | +0.10 | +0.00 | +0.10
+
+Result language (fixed in advance): the primary CI [-8.2, +29.1] spans 0 -> "the interaction is not established" at k=64.
+The interaction CI is entirely above 0 at k=2, 4, 8, 16 (+7.3, +15.5, +18.2, +13.6pp) and spans 0 at k=32 and k=64.
+Components: CE - CE_s = +18.2pp [+8.2, +28.2] (a wrong diagnostic beside the own code hurts, CI above 0 from k=4);
+f - E_s = +6.4pp [-6.4, +19.1] (without code the wrong diagnostic is not distinguishable from the right one).
+
+=== SECONDARY at k=64 (same paired problem bootstrap, 10,000 resamples, seed 0; sign = problems +/-)
+  f    - E_s    :  +6.4pp [ -6.4, +19.1]  5/2   diagnostic content without code: not established
+  E_s  - noise  :  -2.7pp [-16.4, +11.8]  3/4   wrong real diagnostic vs content-free filler: no difference established
+  CE_s - E_s    : -30.9pp [-49.1, -13.6]  1/7   code presence under a wrong diagnostic: clearly harmful
+  CE   - E_s    : -12.7pp [-28.2,  +3.6]  3/6   own code + own diagnostic vs no code + wrong diagnostic: not established
+  E_s  - memI   :  -5.6pp [-26.2, +13.7]        no advantage over retrying (section below)
+
+=== E_s minus memoryless_I (analyze_memI.py estimator: pooled without-replacement pass@k over 640 draws per problem)   [python depth/analyze_memI.py /scratch/anonymous/decomp_rerun_run/out_memI out/depth_E_s.jsonl]
+   k   repair   memI    delta_k   95% CI
+    1   0.045   0.086     -4.1pp  [ -10.6,   +2.7]  
+    2   0.091   0.150     -5.9pp  [ -14.1,   +2.1]  
+    4   0.182   0.238     -5.6pp  [ -15.0,   +2.9]  
+    8   0.245   0.344     -9.8pp  [ -20.9,   +1.6]  
+   16   0.336   0.456    -12.0pp  [ -23.4,   -0.1]  
+   32   0.464   0.558     -9.4pp  [ -25.4,   +5.6]  
+   64   0.573   0.628     -5.6pp  [ -26.2,  +13.7]  no advantage established
+   conditional on attempt 1 failing (repair: trajectories with a failed attempt 1; memI: pooled estimator over k-1 draws)
+     k= 2: delta   -3.6pp  [  -8.1,   +0.9]  (n=11)
+     k= 4: delta   -5.4pp  [ -14.9,   +2.2]  (n=11)
+     k= 8: delta  -10.7pp  [ -20.1,   -1.5]  (n=11)
+     k=16: delta  -13.5pp  [ -23.4,   -3.9]  (n=11)
+     k=32: delta  -10.8pp  [ -25.0,   +2.6]  (n=11)
+     k=64: delta   -6.6pp  [ -25.8,  +11.4]  (n=11)
+
+=== Post-hoc comparison (2026-09-08, noise as the no-code contrast): out_codearms/ANALYSIS_INTERACTION.txt
+  interaction at k=64 +14.5pp [-2.7, +30.9]; with E_s in its place +11.8pp [-8.2, +29.1]. Same shape, same verdict.
